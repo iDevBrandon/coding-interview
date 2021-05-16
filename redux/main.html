@@ -127,7 +127,7 @@
             title: action.title,
             desc: action.desc,
           });
-          Object.assign({}, state, {
+          newState = Object.assign({}, state, {
             max_id: newMaxId,
             contents: newContents,
             mode: "read",
