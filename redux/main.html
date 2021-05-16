@@ -50,9 +50,16 @@
           <ul>
               <li><a onclick="
                 event.preventDefault();
+                store.dispatch({
+                  type:'CHANGE_MODE',
+                  mode:'create'
+                })
+
 
                 " href="/create">create</a></li>
-              <li><input type="button" value="delete"></li>
+              <li><input onclick="store.dispatch({
+                type: 'DELETE' 
+              })" type="button" value="delete"></li>
           </ul>
           `;
       }
@@ -101,6 +108,13 @@
                 ${aDesc}
             </article>
           `;
+        } else if (state.mode === "welcome") {
+          document.querySelector("#content").innerHTML = `
+            <article>
+                <h2>Welcome</h2>
+               hi
+            </article>
+          `;
         }
       }
 
@@ -108,7 +122,7 @@
         if (state === undefined) {
           return {
             max_id: 2,
-            mode: "create",
+            mode: "welcome",
             selcted_id: 2,
             contents: [
               { id: 1, title: "HTML", desc: "HTML is .." },
@@ -118,7 +132,10 @@
         }
         let newState = {};
         if (action.type === "SELECT") {
-          newState = Object.assign({}, state, { selcted_id: action.id });
+          newState = Object.assign({}, state, {
+            selcted_id: action.id,
+            mode: "read",
+          });
         } else if (action.type === "CREATE") {
           let newMaxId = state.max_id + 1;
           let newContents = state.contents.concat();
@@ -132,6 +149,23 @@
             contents: newContents,
             mode: "read",
           });
+        } else if (action.type === "DELETE") {
+          let newContents = [];
+          let i = 0;
+          while (i < state.contents.length) {
+            if (state.selcted_id !== state.contents[i].id) {
+              newContents.push(state.contents[i]);
+            }
+            i = i + 1;
+          }
+          newState = Object.assign({}, state, {
+            contents: newContents,
+            mode: "welcome",
+          });
+        } else if (action.type === "CHANGE_MODE") {
+          newState = Object.assign({}, state, {
+            mode: action.mode,
+          });
         }
         console.log(action, state, newState);
         return newState;
@@ -139,6 +173,8 @@
 
       var store = Redux.createStore(reducer);
       store.subscribe(article);
+      store.subscribe(TOC);
+
       subject();
       TOC();
       control();
