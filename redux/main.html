@@ -11,11 +11,11 @@
     <script>
       function subject() {
         document.querySelector("#subject").innerHTML = `
-          <header>
-              <h1>WEB</h1>
-              Hello, WEB!
-          </header>
-        `;
+            <header>
+                <h1>WEB</h1>
+                Hello, WEB!
+            </header>
+          `;
       }
 
       function TOC() {
@@ -26,57 +26,89 @@
           liTags =
             liTags +
             `
-        <li>
-            <a onclick="
-                event.preventDefault();
-                let action = {type: 'SELECT', id: ${state.contents[i].id}}
-                store.dispatch(action)
-                 
-            " href="${state.contents[i].id}">
-                ${state.contents[i].title}
-            </a>
-        </li>`;
+          <li>
+              <a onclick="
+                  event.preventDefault();
+                  let action = {type: 'SELECT', id: ${state.contents[i].id}}
+                  store.dispatch(action)
+
+              " href="${state.contents[i].id}">
+                  ${state.contents[i].title}
+              </a>
+          </li>`;
           i = i + 1;
         }
         document.querySelector("#toc").innerHTML = `
-    <nav>
-        <ol>${liTags}</ ol>
-    </nav>
-    `;
+      <nav>
+          <ol>${liTags}</ ol>
+      </nav>
+      `;
       }
 
       function control() {
         document.querySelector("#control").innerHTML = `
-        <ul>
-            <li><a href="/create">create</a></li>
-            <li><input type="button" value="delete"></li>
-        </ul>
-        `;
+          <ul>
+              <li><a onclick="
+                event.preventDefault();
+
+                " href="/create">create</a></li>
+              <li><input type="button" value="delete"></li>
+          </ul>
+          `;
       }
 
       function article() {
         let state = store.getState();
-        let i = 0;
-        let aTitle, aDesc;
-        while (i < state.contents.length) {
-          if (state.contents[i].id === state.selcted_id) {
-            aTitle = state.contents[i].title;
-            aDesc = state.contents[i].desc;
-            break;
+        if (state.mode === "create") {
+          document.querySelector("#content").innerHTML = `
+            <article>
+              <form onsubmit="
+                event.preventDefault();
+                  let _title = this.title.value;
+                  let _desc = this.desc.value;
+                  store.dispatch({
+                    type: 'CREATE',
+                    title: _title,
+                    desc: _desc
+                  })
+                ">
+                  <p>
+                    <input type='text' name='title' placeholder='title'>
+                  </p>
+                  <p>
+                    <input type='text' name='desc' placeholder='description'>
+                  </p>
+                  <p>
+                    <input type='submit'>
+                  </p>
+                </form>
+            </article>
+          `;
+        } else if (state.mode === "read") {
+          let i = 0;
+          let aTitle, aDesc;
+          while (i < state.contents.length) {
+            if (state.contents[i].id === state.selcted_id) {
+              aTitle = state.contents[i].title;
+              aDesc = state.contents[i].desc;
+              break;
+            }
+            i = i + 1;
           }
-          i = i + 1;
+          document.querySelector("#content").innerHTML = `
+            <article>
+                <h2>${aTitle}</h2>
+                ${aDesc}
+            </article>
+          `;
         }
-        document.querySelector("#content").innerHTML = `
-          <article>
-              <h2>${aTitle}</h2>
-              ${aDesc}
-          </article>
-        `;
       }
 
       function reducer(state, action) {
         if (state === undefined) {
           return {
+            max_id: 2,
+            mode: "create",
             selcted_id: 2,
             contents: [
               { id: 1, title: "HTML", desc: "HTML is .." },
@@ -87,6 +119,19 @@
         let newState = {};
         if (action.type === "SELECT") {
           newState = Object.assign({}, state, { selcted_id: action.id });
+        } else if (action.type === "CREATE") {
+          let newMaxId = state.max_id + 1;
+          let newContents = state.contents.concat();
+          newContents.push({
+            id: newMaxId,
+            title: action.title,
+            desc: action.desc,
+          });
+          Object.assign({}, state, {
+            max_id: newMaxId,
+            contents: newContents,
+            mode: "read",
+          });
         }
         console.log(action, state, newState);
         return newState;
