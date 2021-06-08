@@ -1,1 +1,1 @@
-dispatch or reducer can change 
+Learn Vaniall Redux 
