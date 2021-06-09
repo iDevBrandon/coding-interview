@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { buyIceCream } from "../redux";
 
 const IceCreamContainer = (props) => {
-  console.log(props);
-  return (
+   return (
     <div>
       <h2>Number of ice creams - {props.numOfIceCreams} </h2>
       <button onClick={props.buyIceCream}>Buy Ice Cream</button>
