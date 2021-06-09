@@ -1,7 +1,14 @@
 // Store
 // es6 import
 const redux = require("redux");
+const reduxLogger = require("redux-logger");
+
 const createStore = redux.createStore;
+const combineReducers = redux.combineReducers;
+const applyMiddleware = redux.applyMiddleware;
+
+// logger middleware
+const logger = reduxLogger.createLogger();
 
 // Action is the plain object here inside return
 // Action Creator a function that returns an action
@@ -88,15 +95,17 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
   }
 };
 
+const rootReducer = combineReducers({
+  cake: cakeReducer,
+  iceCream: iceCreamReducer,
+});
 // Holds application state
-const store = createStore(reducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 // Allows access to state via getState()
 console.log("Initial state", store.getState());
 // Registers listneres via subscribe(listner)
 // Handles unregistering of listners
-const unsubscribe = store.subscribe(() =>
-  console.log("Updated state", store.getState())
-);
+const unsubscribe = store.subscribe(() => {});
 // Allows state to be updated via dispatch(action)
 store.dispatch(buyCake());
 store.dispatch(buyCake());
