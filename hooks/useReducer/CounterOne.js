@@ -1,0 +1,32 @@
+import React, { useReducer } from "react";
+
+const initalState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    case "reset":
+      return initalState;
+    default:
+      return state;
+  }
+};
+
+const CounterOne = () => {
+  const [count, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <div>
+      <div>Count = {count}</div>
+      <button onClick={() => dispatch("increment")}>Increment</button>
+      <button>Decrement</button>
+      <button>Reset</button>
+    </div>
+  );
+};
+
+export default CounterOne;
+
+ 
