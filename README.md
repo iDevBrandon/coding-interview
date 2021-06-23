@@ -1,4 +1,8 @@
-# Code with me I would like to make a study note for other FE developer with following stacks
+# Code with me  
+
+Study order 
+PS -> JS -> Project -> CS 
+
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
