@@ -5,6 +5,9 @@
 
 # Frontend Stack
 
+REST API VS. GraphQL API
+
+
 ## CSS
 
 ## JavaScript
