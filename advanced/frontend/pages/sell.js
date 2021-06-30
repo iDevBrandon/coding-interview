@@ -1,7 +1,3 @@
 export default function sellPage() {
-  return (
-    <div>
-      <p>Hello</p>
-    </div>
-  );
+  return <p>Hello i am the sell page</p>;
 }
