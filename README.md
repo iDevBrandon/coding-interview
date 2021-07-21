@@ -1,8 +1,7 @@
 # Code with me  
 
-Study order 
-PS -> JS -> Project -> CS 
-
+Study order
+PS -> JS -> Project -> CS
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
@@ -26,10 +25,10 @@ AWS amplify
 
 ## Three Core Concepts
 
-# Interesting business model 
+## Interesting business model
 
 | Entity | Job Position  |
-| ------ | ------------- | 
+| ------ | ------------- |
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Prontend  |
 | [민팃](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
@@ -39,7 +38,8 @@ AWS amplify
 2. PS (Data structure and algorithems)
 3. Tech stack(project)
 
-# 1. Coding Test | Data structures & algorithms
+## 1. Coding Test | Data structures & algorithms
+
 focus on algo study first
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
@@ -67,8 +67,9 @@ Leetcode/hackrank/Programmers
 - [Binary Search](#binary-search)
 - [Errors](#errors)
 
-# 2. CS for Interview
-Google FE dev interview questions or read the repo i attached 
+## 2. CS for Interview
+
+Google FE dev interview questions or read the repo i attached
 
 General CS
 
@@ -86,7 +87,7 @@ JS Interview
 
 [yjs03057/33-js-concepts](https://github.com/yjs03057/33-js-concepts)
 
-React 
+React
 
 [adam-golab/react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 
@@ -94,18 +95,18 @@ React
 
 [appear/reactjs-interview-questions-ko](https://github.com/appear/reactjs-interview-questions-ko)
 
+## 3. CV/Resume & Portfolio
 
-
-# 3. CV/Resume & Portfolio
-Write a simple CV to explain who you are. 
+Write a simple CV to explain who you are.
 
 Show what you have done so far with Github.
-For me, i will make oxinion/dividendKing/RoboTaxi full stack apps 
+For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
 
+## 4. Apply companies where you would like to work with
 
- # 4. Apply companies where you would like to work with 
- The companies and your preference might be different, depending on wehre you live currently. 
+ The companies and your preference might be different, depending on wehre you live currently.
  top companies in Korea
+
 - NAVER
 - KAKAO
 - LINE
@@ -118,23 +119,23 @@ For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
 - Sendbird
 - Zigzag
 
-# useful articles
+## useful articles
 
 10 Common Data Structures Explained with Videos + Exercises
-(https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b/)
+(<https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b/>)
 
 Data structures and algorithms in JS
-(https://www.youtube.com/watch?v=t2CEgPsws3U&t=2221s)
+(<https://www.youtube.com/watch?v=t2CEgPsws3U&t=2221s>)
 
 algorithms-in-motion
-(https://www.manning.com/livevideo/algorithms-in-motion)
+(<https://www.manning.com/livevideo/algorithms-in-motion>)
 
   1.JS Master class
 
   2.Scrimba
 
   3.YouTube
-  https://www.youtube.com/watch?v=t2CEgPsws3U&list=RDCMUC8butISFwT-Wl7EV0hUK0BQ&start_radio=1&t=2237
+  <https://www.youtube.com/watch?v=t2CEgPsws3U&list=RDCMUC8butISFwT-Wl7EV0hUK0BQ&start_radio=1&t=2237>
 
   4.CodeWars
 
@@ -142,8 +143,7 @@ algorithms-in-motion
 
   6.Exercism
 
+  <https://daniel-park.tistory.com/category/Alogorithm?page=1>
 
-  https://daniel-park.tistory.com/category/Alogorithm?page=1
-
-  https://github.com/trekhleb/javascript-algorithms
+  <https://github.com/trekhleb/javascript-algorithms>
   
