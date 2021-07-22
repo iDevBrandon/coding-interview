@@ -1,3 +1,6 @@
 23/07/21
-1. Hyundia card 
-2. Karrot
+| Entity | Job Position  |
+| ------ | ------------- |
+| [Hyundia Card](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
+| [Karrot](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
+
