@@ -1,11 +1,10 @@
 # 👨‍💻 Web Dev
 
-Study order
-PS -> JS -> Project -> CS
+## Study order
+PS -> CS -> JS -> Project
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
-I would like to create a repo that is like a template boilerplate for every FE project.
 ## 📚 JAVASCRIPT
 ## 📘 React
 
@@ -19,11 +18,9 @@ Next.js + Apollo + MongoDB + TypeScript
 
 AWS amplify
 
-## React Redux series by Codevolution
 
-## Learn Vaniall Redux
 
-## Three Core Concepts
+
 
 ## Interesting business model
 
@@ -32,11 +29,6 @@ AWS amplify
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Prontend  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
-### How to be a Web FE developer
-
-1. CS (General knowledge)
-2. PS (Data structure and algorithems)
-3. Tech stack(project)
 
 
 
@@ -80,8 +72,8 @@ Leetcode/hackrank/Programmers
 
 
 
-Google FE dev interview questions or read the repo i attached
 ## 🔗 Link
+Google FE dev interview questions or read the repo i attached
 
 [JaeYeopHan/Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 
