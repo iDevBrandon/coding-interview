@@ -10,6 +10,10 @@
 |[네이버](https://recruit.navercorp.com/naver/job/detail/developer?annoId=20006281&classId=&jobId=&entTypeCd=004&searchTxt=&searchSysComCd=)| FE | Applied |
 |[동아일보](https://colorful-tennis-b4b.notion.site/bff868e263ed43b2addb694b2b888e92)| FE | Applied |
 |[두나무](https://www.dunamu.com/views/05_job_contents_ko.html?id=273)| FE | Applied |
+|[인프런](https://www.inflearn.com/pages/withus-inflab-recruit_fe)| FE | Applied |
+
+
+
 04/08/21
 | Entity | Job Position  | Process | 
 | ------ | ------------- | ------- |
