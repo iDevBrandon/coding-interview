@@ -7,9 +7,9 @@
 |[빗썸교육](https://m.saramin.co.kr/job-search/view?rec_idx=40669190&is_apply_statics_auto_focus=&fbclid=IwAR3YaI6MVTvGx6cmKF_vHWS_XYfdrPCD-blDFN7RlNVwG6-ojbBiQEXNLAw)| edu | Applied |
 |[토스 페이](https://recruit.tosspayments.com/2021?fbclid=IwAR2VV18AFD36sctk-8XrRXPbo8AQ06_qPpalnR0cgYTF1JRl55AvDML91pU&job=frontend-developer)| FE | Applied |
 |[쳐브](https://chubb.applyin.co.kr/jobs/1259?fbclid=IwAR3MCZsff_LiQ3e3-NNnGNMQjTTQV7EvMJAGZyWaijTEVf4zwzYxEeD-MQ4)| Intern | Applied |
-
-
-
+|[네이버](https://recruit.navercorp.com/naver/job/detail/developer?annoId=20006281&classId=&jobId=&entTypeCd=004&searchTxt=&searchSysComCd=)| FE | Applied |
+|[동아일보](https://colorful-tennis-b4b.notion.site/bff868e263ed43b2addb694b2b888e92)| FE | Applied |
+|[두나무](https://www.dunamu.com/views/05_job_contents_ko.html?id=273)| FE | Applied |
 04/08/21
 | Entity | Job Position  | Process | 
 | ------ | ------------- | ------- |
