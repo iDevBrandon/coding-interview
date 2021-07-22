@@ -1,6 +1,7 @@
 # 👨‍💻 Web Dev
 
 ## Study order
+PS>>>>>> CS >> Projects
 1.VanillaJS + Theory
 2. JS project
 3. PS
