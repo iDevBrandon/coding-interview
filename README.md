@@ -6,10 +6,10 @@ PS -> CS -> JS -> Project
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
 ## 📚 JAVASCRIPT
-  * [동기식 처리 모델 vs 비동기식 처리 모델](./docs/Javascript/AsynchronousProcessing.md)
+  * [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
   * [ES6: Promise](./docs/Javascript/Promise.md)
 
-  
+ [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 ## 📘 React
 
 React + Redux
