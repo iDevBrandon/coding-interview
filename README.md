@@ -1,7 +1,15 @@
 # 👨‍💻 Web Dev
 
 ## Study order
-PS -> CS -> JS -> Project
+1.VanillaJS + Theory
+2. JS project
+3. PS
+4. React
+5. CS with JS Interview
+6. Projects
+
+
+
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
@@ -11,6 +19,8 @@ PS -> CS -> JS -> Project
 
  [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 ## 📘 React
+
+React class based component vs functional component 
 
 React + Redux
 
