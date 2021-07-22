@@ -6,8 +6,8 @@ PS -> JS -> Project -> CS
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
 I would like to create a repo that is like a template boilerplate for every FE project.
-
-React
+## 📚 JAVASCRIPT
+## 📘 React
 
 React + Redux
 
@@ -30,7 +30,7 @@ AWS amplify
 | Entity | Job Position  |
 | ------ | ------------- |
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Prontend  |
-| [민팃](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
+| [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
 ### How to be a Web FE developer
 
@@ -38,9 +38,9 @@ AWS amplify
 2. PS (Data structure and algorithems)
 3. Tech stack(project)
 
-## 1. Coding Test | Data structures & algorithms
 
-focus on algo study first
+
+## 📘 Algorithms
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
@@ -67,11 +67,21 @@ Leetcode/hackrank/Programmers
 - [Binary Search](#binary-search)
 - [Errors](#errors)
 
-## 2. CS for Interview
+## 🔒 Data Structure
+
+
+## 📓 Database
+
+## 🌐 Network
+
+## 🤖 OS
+
+## 💯 Dev Tips
+
+
 
 Google FE dev interview questions or read the repo i attached
-
-General CS
+## 🔗 Link
 
 [JaeYeopHan/Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 
