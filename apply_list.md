@@ -11,7 +11,7 @@
 |[동아일보](https://colorful-tennis-b4b.notion.site/bff868e263ed43b2addb694b2b888e92)| FE | Applied |
 |[두나무](https://www.dunamu.com/views/05_job_contents_ko.html?id=273)| FE | Applied |
 |[인프런](https://www.inflearn.com/pages/withus-inflab-recruit_fe)| FE | Applied |
-
+|[보이스루](https://sites.google.com/voithru.com/career/jobs?authuser=0)| FE| Applied |
 
 
 04/08/21
