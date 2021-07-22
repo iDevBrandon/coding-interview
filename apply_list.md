@@ -18,3 +18,8 @@
 | Entity | Job Position  | Process | 
 | ------ | ------------- | ------- |
 |[MBC](https://recruit.mbc.co.kr:1004/apply_site/recruit/view)| OPEN | NOT YET|
+
+
+
+Hidden card
+[토스 증권](https://toss.im/career/job-detail?job_id=4076141003) | FE | NOT YET
