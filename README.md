@@ -30,7 +30,7 @@ AWS amplify
 
 | Entity | Job Position  |
 | ------ | ------------- |
-| [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Prontend  |
+| [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
 
