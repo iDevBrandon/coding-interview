@@ -40,7 +40,7 @@ AWS amplify
 
 
 
-## 📘 Algorithms
+## 📔 Algorithms
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
