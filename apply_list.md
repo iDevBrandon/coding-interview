@@ -22,4 +22,6 @@
 
 
 Hidden card
+| Entity | Job Position  | Process | 
+| ------ | ------------- | ------- |
 [토스 증권](https://toss.im/career/job-detail?job_id=4076141003) | FE | NOT YET
