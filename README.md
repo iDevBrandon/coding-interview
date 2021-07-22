@@ -26,7 +26,7 @@ AWS amplify
 
 
 
-## Interesting business model
+## Interesting BM
 
 | Entity | Job Position  |
 | ------ | ------------- |
