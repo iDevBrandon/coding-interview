@@ -12,6 +12,7 @@
 |[두나무](https://www.dunamu.com/views/05_job_contents_ko.html?id=273)| FE | Applied |
 |[인프런](https://www.inflearn.com/pages/withus-inflab-recruit_fe)| FE | Applied |
 |[보이스루](https://sites.google.com/voithru.com/career/jobs?authuser=0)| FE| Applied |
+|[교원](https://kyowon.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=64512&fbclid=IwAR28vqceuv6b9l4CYiybPBYeuO-s3cp92a8Eh8AtPyuQ4v-XKq-cUKXRgWo)| IT | Applied |
 
 
 04/08/21
