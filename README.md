@@ -17,8 +17,11 @@ PS>>>>>> CS >> Projects
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
 ## 📚 JAVASCRIPT
+  * [callback, promise]
   * [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
+  * [callstack, event loop, Execution Context]
   * [ES6: Promise](./docs/Javascript/Promise.md)
+  * [Prototype]
 
  [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 ## 📘 React
