@@ -11,22 +11,21 @@ PS>>>>>> CS >> Projects
 5. CS with JS Interview
 6. Projects
 
-
-
-
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
 ## 📚 JAVASCRIPT
-  * [callback, promise]
+
+* [callback, promise]
   * [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
   * [callstack, event loop, Execution Context]
   * [ES6: Promise](./docs/Javascript/Promise.md)
   * [Prototype]
 
  [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
+
 ## 📘 React
 
-React class based component vs functional component 
+React class based component vs functional component
 
 React + Redux
 
@@ -38,10 +37,6 @@ Next.js + Apollo + MongoDB + TypeScript
 
 AWS amplify
 
-
-
-
-
 ## Interesting BM
 
 | Entity | Job Position  |
@@ -49,38 +44,36 @@ AWS amplify
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
-
-
-
 ## 📔 Algorithms
+
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
-- [Array](/array)
-- [algorithms](#algorithms)
-- [Contents](#contents)
-- [TRY later](#try-later)
-- [Time check](#time-check)
-- [File read](#file-read)
-- [String](#string)
-- [StringStream](#stringstream)
-- [Vector](#vector)
-- [Linked list](#linked-list)
-- [Recursion](#recursion)
-- [Hash Map](#hash-map)
-- [Map](#map)
-- [Stack](#stack)
-- [Queue](#queue)
-- [Heap](#heap)
-- [Bitmasking](#bitmasking)
-- [DFS](#dfs)
-- [BFS](#bfs)
-- [DP](#dp)
-- [Binary Search](#binary-search)
-- [Errors](#errors)
+* [Array](/array)
+
+[algorithms](#algorithms)
+[Contents](#contents)
+[TRY later](#try-later)
+[Time check](#time-check)
+[File read](#file-read)
+[String](#string)
+[StringStream](#stringstream)
+[Vector](#vector)
+[Linked list](#linked-list)
+[Recursion](#recursion)
+[Hash Map](#hash-map)
+[Map](#map)
+[Stack](#stack)
+[Queue](#queue)
+[Heap](#heap)
+[Bitmasking](#bitmasking)
+[DFS](#dfs)
+[BFS](#bfs)
+[DP](#dp)
+[Binary Search](#binary-search)
+[Errors](#errors)
 
 ## 🔒 Data Structure
-
 
 ## 📓 Database
 
@@ -90,9 +83,8 @@ Leetcode/hackrank/Programmers
 
 ## 💯 Dev Tips
 
-
-
 ## 🔗 Link
+
 Google FE dev interview questions or read the repo i attached
 
 [JaeYeopHan/Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
@@ -124,23 +116,6 @@ Write a simple CV to explain who you are.
 Show what you have done so far with Github.
 For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
 
-## 4. Apply companies where you would like to work with
-
- The companies and your preference might be different, depending on wehre you live currently.
- top companies in Korea
-
-- NAVER
-- KAKAO
-- LINE
-- Coupang
-- Baemin(Delivery hero Korea)
-- Karrot
-- Toss
-- Hyper connect
-- Yanolja
-- Sendbird
-- Zigzag
-
 ## useful articles
 
 10 Common Data Structures Explained with Videos + Exercises
@@ -168,4 +143,3 @@ algorithms-in-motion
   <https://daniel-park.tistory.com/category/Alogorithm?page=1>
 
   <https://github.com/trekhleb/javascript-algorithms>
-  
