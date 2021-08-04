@@ -124,22 +124,9 @@ Write a simple CV to explain who you are.
 Show what you have done so far with Github.
 For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
 
-## 4. Apply companies where you would like to work with
+ 
 
- The companies and your preference might be different, depending on wehre you live currently.
- top companies in Korea
 
-- NAVER
-- KAKAO
-- LINE
-- Coupang
-- Baemin(Delivery hero Korea)
-- Karrot
-- Toss
-- Hyper connect
-- Yanolja
-- Sendbird
-- Zigzag
 
 ## useful articles
 
