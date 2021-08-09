@@ -51,6 +51,7 @@ Virtual DOM
 BOM(Browser Object Model)
 웹 브라우저 환경을 다양한 기능을 객체처럼 다루는 모델
 window 객체는 최상위 객체
+
 ## HTML
 
 ## CSS
