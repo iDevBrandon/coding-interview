@@ -27,6 +27,15 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
+## 자주나오는 유형
+
+완전 탐색(BFS, DFS, 이분 탐색 등)
+동적 계획법(DP)
+문자열 처리
+트리, 그래프
+그리디 알고리즘
+브루트 포스
+
 ## 2021/04/30
 
 leetcode, BOJ,

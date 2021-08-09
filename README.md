@@ -1,5 +1,24 @@
 # 👨‍💻 Web Dev
 
+## 1. Coding Test
+
+완전 탐색(BFS, DFS, 이분 탐색 등)
+동적 계획법(DP)
+문자열 처리
+트리, 그래프
+그리디 알고리즘
+브루트 포스
+
+## 2. Coding Assignment
+
+반응형 웹 구현(Responsive)
+state와 props를 통한 컴포넌트간 데이터 바인딩
+CSS 스타일링(CSS Modules, Sass/Scss, Styled-components 등)
+REST API를 통해 비동기로 데이터 불러오기
+Component Life Cycle
+최적화 방법(Lazy Loading 등)
+상태관리 라이브러리(React : Redux, MobX / Vue : Vuex)
+
 ## Study order
 
 PS>>>>>> CS >> Projects
