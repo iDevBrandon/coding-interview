@@ -28,6 +28,8 @@ DOM 추가 방식
 렌더링 과정
 
 DOM 조작을 최소화해야 성능 올릴 수 있다는 사실을 이해하기 위해선, 브라우저 렌더링 과정을 이해 해야함.
+<img width="1389" alt="Screen Shot 2021-08-09 at 3 39 05 PM" src="https://user-images.githubusercontent.com/40842018/128668449-86210b5d-e2ba-4289-9bb9-254eca7f77e1.png">
+
 
 ## HTML
 
