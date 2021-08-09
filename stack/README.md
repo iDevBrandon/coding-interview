@@ -10,7 +10,7 @@
   DOM vs BOM <https://www.youtube.com/watch?v=q1fQnGG1bgU>
 
 DOM (Document Object Model)
-HTML 요소 간의 부자 관계를 반영하여, 모든 노드를 트리 구조로 구성한 것
+HTML 요소 간의 부자 관계를 반영하여, 모든 노드를 트리 구조로 구성한 것
 
 DOM은 브라우저에서 제공하는 API중 하나
 ex) document.querySelector(), Node.appendChild()
