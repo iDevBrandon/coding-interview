@@ -65,7 +65,7 @@ AWS amplify
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
-# PS
+# PS & CS
 
 ## 📔 Algorithms
 
@@ -96,8 +96,6 @@ Leetcode/hackrank/Programmers
 [Errors](#errors)
 
 ## 🔒 Data Structure
-
-# CS
 
 ## 📓 Database
 
