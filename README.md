@@ -44,6 +44,8 @@ PS>>>>>> CS >> Projects
 
 ## 📘 React
 
+
+
 React class based component vs functional component
 
 React + Redux
@@ -55,6 +57,8 @@ Next.js
 Next.js + Apollo + MongoDB + TypeScript
 
 AWS amplify
+
+## typescript logo :typescript: TypeScript
 
 ## Interesting BM
 
