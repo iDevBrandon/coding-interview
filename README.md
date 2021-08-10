@@ -65,6 +65,8 @@ AWS amplify
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
+# PS
+
 ## 📔 Algorithms
 
 Solving algorithm problems with your favoriate language.
@@ -94,6 +96,8 @@ Leetcode/hackrank/Programmers
 [Errors](#errors)
 
 ## 🔒 Data Structure
+
+# CS
 
 ## 📓 Database
 
