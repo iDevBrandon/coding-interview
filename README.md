@@ -21,12 +21,12 @@ Component Life Cycle
 
 ## Study order
 
-PS>>>>>> CS >> Projects
+PS >>>>>> CS >> Projects
 
 1.VanillaJS + Theory
 2. JS project
 3. PS
-4. React
+4. React with Redux
 5. CS with JS Interview
 6. Projects
 
@@ -93,7 +93,6 @@ Leetcode/hackrank/Programmers
 [BFS](#bfs)
 [DP](#dp)
 [Binary Search](#binary-search)
-[Errors](#errors)
 
 ## 🔒 Data Structure
 
@@ -136,7 +135,7 @@ React
 Write a simple CV to explain who you are.
 
 Show what you have done so far with Github.
-For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
+For me, i will make oxinion & DividendDB full stack apps
 
 ## useful articles
 
