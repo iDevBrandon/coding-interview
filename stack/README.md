@@ -76,14 +76,6 @@ ex) 사이트 접속이 안되면, 쿠키를 제거 해보는것도 방법중 �
 
 ## CSS
 
-## JavaScript
-
-<https://devowen.com/276>
-
-### Promise & Async & Await
-
-## React
-
 ## CSR(Client Server Rendering)
 
 SPA(Single Page Application) - rendering partly each components. Ex) React,View and Angular.

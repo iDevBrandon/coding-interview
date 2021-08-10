@@ -40,7 +40,7 @@ PS>>>>>> CS >> Projects
   * [ES6: Promise](./docs/Javascript/Promise.md)
   * [Prototype]
 
- [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
+[To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 
 ## 📘 React
 
@@ -68,8 +68,7 @@ AWS amplify
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
-* [Array](/array)
-
+[Array](/array)
 [algorithms](#algorithms)
 [Contents](#contents)
 [TRY later](#try-later)
