@@ -137,19 +137,19 @@ For me, i will make oxinion/dividendKing/RoboTaxi full stack apps
 ## useful articles
 
 10 Common Data Structures Explained with Videos + Exercises
-(<https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b/>)
+<https://www.freecodecamp.org/news/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b/>
 
 Data structures and algorithms in JS
-(<https://www.youtube.com/watch?v=t2CEgPsws3U&t=2221s>)
+<https://www.youtube.com/watch?v=t2CEgPsws3U&t=2221s>
 
 algorithms-in-motion
-(<https://www.manning.com/livevideo/algorithms-in-motion>)
+<https://www.manning.com/livevideo/algorithms-in-motion>
 
-  1.JS Master class
+1.JS Master class
 
-  2.Scrimba
+2.Scrimba
 
-  3.YouTube
+3.YouTube
   <https://www.youtube.com/watch?v=t2CEgPsws3U&list=RDCMUC8butISFwT-Wl7EV0hUK0BQ&start_radio=1&t=2237>
 
   4.CodeWars
