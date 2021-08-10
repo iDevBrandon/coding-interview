@@ -58,7 +58,7 @@ Next.js + Apollo + MongoDB + TypeScript
 
 AWS amplify
 
-## typescript logo :typescript: TypeScript
+## 🧩 typescript
 
 ## Interesting BM
 
