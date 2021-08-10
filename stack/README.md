@@ -5,7 +5,7 @@
 - DOCTYPE 이 무엇인가?
   DOCTYPE은 문서 종류를 선언하는 태그, 어떤 버전의 HTML을 사용할 것인지 브라우저에게 알려줌. <!DOCTYPE html>
 
-- DOM vs BOM <https://www.youtube.com/watch?v=q1fQnGG1bgU>
+## DOM vs BOM <https://www.youtube.com/watch?v=q1fQnGG1bgU>
 
 DOM (Document Object Model)
 HTML 요소 간의 부자 관계를 반영하여, 모든 노드를 트리 구조로 구성한 것
@@ -52,6 +52,20 @@ BOM(Browser Object Model)
 웹 브라우저 환경을 다양한 기능을 객체처럼 다루는 모델
 window 객체는 최상위 객체
 
+## Cookie, Session, Cache <https://www.youtube.com/watch?v=OpoVuwxGRDI>
+
+쿠키는 사이트를 방문하고 브라우저에 저장되는 내용을 의미한다.
+쿠키는 내가 임의로 고치고 지울수 도 있고, 심지어 남이 훔쳐볼수도 있다.
+쿠키는 지워지거나, 조작되도 큰일 나지 않는 장바구니, 공지 메세지 1일 안보기 등등에 사용된다.
+
+세션을 사용하는 사이트를 접속하면, 서버에서는 사용자를 구별하기 위해 기한이 짧은 쿠키를 브라우저에 저장한다.
+브라우저가 이 사이트를 돌아다닐때, http 요청에 이 키를 실어서 전송하고, 서버는 이 쿠키를 이용해 사용자의 세션을 유지한다.
+그리고 서버는 사용자를 인식하고, 응답을 보내준다.
+
+ex) 사이트 접속이 안되면, 쿠키를 제거 해보는것도 방법중 하나이다.
+
+캐쉬는 가져오는데 비용이 드는 데이터를 한 번 가져온 뒤에는 임시로 저장해 두는것이다.
+
 ## HTML
 
 ## CSS
@@ -59,6 +73,8 @@ window 객체는 최상위 객체
 ## JavaScript
 
 <https://devowen.com/276>
+
+### Promise & Async & Await
 
 ## React
 
