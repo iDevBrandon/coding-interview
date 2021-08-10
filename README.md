@@ -44,7 +44,7 @@ PS>>>>>> CS >> Projects
 
 [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 
-## 📘 React
+## 📘 [React](https://github.com/iDevBrandon/web-dev/tree/main/stack/React)
 
 React class based component vs functional component
 
