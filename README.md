@@ -46,11 +46,9 @@ PS>>>>>> CS >> Projects
 
 ## 📘 [React](https://github.com/iDevBrandon/web-dev/tree/main/stack/React)
 
-React class based component vs functional component
-
-React + Redux
-
-React + TypeScript
+* React class based component vs functional component
+* React + Redux
+* React + TypeScript
 
 Next.js
 
