@@ -34,7 +34,7 @@ PS >>>>>> CS >> Projects
 
 # Stack
 
-## 📚 [JAVASCRIPT](https://github.com/iDevBrandon/web-dev/tree/main/stack/JavaScript)
+## 📚 [JavaScript](https://github.com/iDevBrandon/web-dev/tree/main/stack/JavaScript)
 
 * [callback, promise]
 * [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
