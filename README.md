@@ -33,6 +33,7 @@ PS>>>>>> CS >> Projects
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
 # Stack
+
 ## 📚 [JAVASCRIPT](https://github.com/iDevBrandon/web-dev/tree/main/stack/JavaScript)
 
 * [callback, promise]
@@ -44,8 +45,6 @@ PS>>>>>> CS >> Projects
 [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 
 ## 📘 React
-
-
 
 React class based component vs functional component
 
@@ -59,7 +58,7 @@ Next.js + Apollo + MongoDB + TypeScript
 
 AWS amplify
 
-## 🧩 typescript
+## 🧩 TypeScript
 
 ## Interesting BM
 
