@@ -48,6 +48,12 @@ Virtual DOM
 
 이전 DOM과 가상 DOM을 비교하여, 바뀐부분만 실제 DOM에 적용시킴.
 
+Virtual DOM은 자바스크립트 객체 구성형태를 띄고, 실제 DOM이 아닌 메모리상에서 처리되기 때문에, 훨씬 빠르게 작동한다.
+
+element의 속성 값만 변한 경우 -> 속성 값만 업데이트
+
+element 태그가 변경된 경우, 해당 하위 모든 노드를 unmount후, 새로운 virtual DOM으로 교체
+
 BOM(Browser Object Model)
 웹 브라우저 환경을 다양한 기능을 객체처럼 다루는 모델
 window 객체는 최상위 객체
