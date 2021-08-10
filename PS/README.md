@@ -42,5 +42,5 @@ leetcode, BOJ,
 
 |                                Number                                 |              Title              |   Result    |
 | :-------------------------------------------------------------------: | :-----------------------------: | :---------: |
-|             [2750](https://www.acmicpc.net/problem/2750)              |          Sort numbers           | success |
-| [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | best-time-to-buy-and-sell-stock | Failed  |
+|             [2750](https://www.acmicpc.net/problem/2750)              |          Sort numbers           |   success   |
+| [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | best-time-to-buy-and-sell-stock |   Failed    |
