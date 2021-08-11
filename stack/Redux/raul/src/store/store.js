@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dummaryReducer from "./dummaryReducer";
+import bookReducer from "./reducers/bookReducer";
 
 const store = configureStore({
-  reducer: { dummy: dummaryReducer },
+  reducer: { books: bookReducer },
 });
 
 export default store;
