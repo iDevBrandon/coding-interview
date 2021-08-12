@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBook } from "../../store/slices/bookSlice";
@@ -17,7 +16,6 @@ const AddBook = () => {
         title,
         author,
         rating,
-        id: nanoid(),
       })
     );
   };
