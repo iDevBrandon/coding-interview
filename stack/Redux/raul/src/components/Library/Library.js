@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteBook } from "../../store/actions/bookActions";
+import { deleteBook } from "../../store/slices/bookSlice";
 
 const Library = () => {
   const dispatch = useDispatch();

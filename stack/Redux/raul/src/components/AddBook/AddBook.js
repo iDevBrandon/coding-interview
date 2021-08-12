@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addBook } from "../../store/actions/bookActions";
+import { addBook } from "../../store/slices/bookSlice";
 
 const AddBook = () => {
   const [title, setTitle] = useState("");
