@@ -32,7 +32,7 @@ PS >>>>>> CS >> Projects
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
-# Stack
+## Stack
 
 ## 📚 [JavaScript](https://github.com/iDevBrandon/web-dev/tree/main/stack/JavaScript)
 
@@ -65,9 +65,9 @@ AWS amplify
 | [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
 | [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
 
-# PS & CS
+## PS & CS
 
-## 📔 Algorithms
+### 📔 Algorithms
 
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
@@ -164,3 +164,8 @@ algorithms-in-motion
 <https://daniel-park.tistory.com/category/Alogorithm?page=1>
 
 <https://github.com/trekhleb/javascript-algorithms>
+
+## 08/18/2021
+
+TypeScript day!
+Gonna learn the basic & How to implement in React, Redux. Overall, have a project with React& Redux written in TypeScript
