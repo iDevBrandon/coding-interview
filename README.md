@@ -2,6 +2,7 @@
 
 ## 1. Coding Test
 
+Solved.ac에서 Gold5를 목표로
 완전 탐색(BFS, DFS, 이분 탐색 등)
 동적 계획법(DP)
 문자열 처리
