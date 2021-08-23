@@ -1,45 +1,39 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
-// createAsyncThunk is a function that returns a function. Thunk is a new action that can be dispatched.
-// when the response is completed from the api call, the thunk will be dispatched.
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { nanoid } from "nanoid";
 
 export const getTodosAsync = createAsyncThunk(
   "todos/getTodosAsync",
   async () => {
-    const response = await fetch("http://localhost:7000/todos");
-    if (response.ok) {
-      const todos = await response.json();
+    const resp = await fetch("http://localhost:7000/todos");
+    if (resp.ok) {
+      const todos = await resp.json();
       return { todos };
     }
   }
 );
 
-// add todo data via API
-export const addTodosAsync = createAsyncThunk(
+export const addTodoAsync = createAsyncThunk(
   "todos/addTodoAsync",
   async (payload) => {
-    const response = await fetch("http://localhost:7000/todos", {
+    const resp = await fetch("http://localhost:7000/todos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        title: payload.title,
-      }),
+      body: JSON.stringify({ title: payload.title }),
     });
 
-    if (response.ok) {
-      const todo = await response.json();
+    if (resp.ok) {
+      const todo = await resp.json();
       return { todo };
     }
   }
 );
 
-// Toggling TODO complete via API
 export const toggleCompleteAsync = createAsyncThunk(
   "todos/completeTodoAsync",
   async (payload) => {
-    const response = await fetch(`http://localhost:7000/todos/${payload.id}`, {
+    const resp = await fetch(`http://localhost:7000/todos/${payload.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -47,26 +41,37 @@ export const toggleCompleteAsync = createAsyncThunk(
       body: JSON.stringify({ completed: payload.completed }),
     });
 
-    if (response.ok) {
-      const todo = await response.json();
-      return { id: todo.id, completed: todo.completed };
+    if (resp.ok) {
+      const todo = await resp.json();
+      return { todo };
     }
   }
 );
 
-const todoSlice = createSlice({
+export const deleteTodoAsync = createAsyncThunk(
+  "todos/deleteTodoAsync",
+  async (payload) => {
+    const resp = await fetch(`http://localhost:7000/todos/${payload.id}`, {
+      method: "DELETE",
+    });
+
+    if (resp.ok) {
+      return { id: payload.id };
+    }
+  }
+);
+
+export const todoSlice = createSlice({
   name: "todos",
   initialState: [],
-
   reducers: {
     addTodo: (state, action) => {
-      const newTodo = {
-        id: new Date(),
+      const todo = {
+        id: nanoid(),
         title: action.payload.title,
         completed: false,
       };
-
-      state.push(newTodo);
+      state.push(todo);
     },
 
     toggleComplete: (state, action) => {
@@ -80,23 +85,24 @@ const todoSlice = createSlice({
   },
 
   extraReducers: {
-    // thunk will dispatch a number of actions based on the response from the api call.
-    [getTodosAsync.pending]: (state, action) => {
-      console.log("Data is being fetched from API");
-    },
     [getTodosAsync.fulfilled]: (state, action) => {
-      console.log("Here your data is!");
       return action.payload.todos;
     },
-    [addTodosAsync.fulfilled]: (state, action) => {
+    [addTodoAsync.fulfilled]: (state, action) => {
       state.push(action.payload.todo);
     },
     [toggleCompleteAsync.fulfilled]: (state, action) => {
-      const index = state.findIndex((todo) => todo.id === action.payload.id);
-      state[index].completed = action.payload.completed;
+      const index = state.findIndex(
+        (todo) => todo.id === action.payload.todo.id
+      );
+      state[index].completed = action.payload.todo.completed;
+    },
+    [deleteTodoAsync.fulfilled]: (state, action) => {
+      return state.filter((todo) => todo.id !== action.payload.id);
     },
   },
 });
 
 export const { addTodo, toggleComplete, deleteTodo } = todoSlice.actions;
+
 export default todoSlice.reducer;
