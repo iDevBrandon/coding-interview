@@ -35,6 +35,25 @@ export const addTodosAsync = createAsyncThunk(
   }
 );
 
+// Toggling TODO complete via API
+export const toggleCompleteAsync = createAsyncThunk(
+  "todos/completeTodoAsync",
+  async (payload) => {
+    const response = await fetch(`http://localhost:7000/todos/${payload.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ completed: payload.completed }),
+    });
+
+    if (response.ok) {
+      const todo = await response.json();
+      return { id: todo.id, completed: todo.completed };
+    }
+  }
+);
+
 const todoSlice = createSlice({
   name: "todos",
   initialState: [],
@@ -71,6 +90,10 @@ const todoSlice = createSlice({
     },
     [addTodosAsync.fulfilled]: (state, action) => {
       state.push(action.payload.todo);
+    },
+    [toggleCompleteAsync.fulfilled]: (state, action) => {
+      const index = state.findIndex((todo) => todo.id === action.payload.id);
+      state[index].completed = action.payload.completed;
     },
   },
 });
