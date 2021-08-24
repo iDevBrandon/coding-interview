@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
 import data from "./mock-data.json";
-import {nanoid} from "nanoid";
+import { nanoid } from "nanoid";
 
 function App() {
   const [contacts, setContacts] = useState(data);
+  // initialize the form data(Object)
   const [addFormData, setAddFormData] = useState({
     fullName: "",
     address: "",
@@ -12,23 +13,34 @@ function App() {
     phoneNumber: "",
   });
 
+  // handle form change
   const handleAddFormChange = (event) => {
     event.preventDefault();
-    const fieldName = event.target.getAttribute("name");
-    const fieldValue = event.target.value;
+    const fieldName = event.target.getAttribute("name"); // get the field name each input
+    const fieldValue = event.target.value; // get the field value from each input
 
-    const newFormData = { ...addFormData };
-    newFormData[fieldName] = fieldValue;
+    const newFormData = { ...addFormData }; // copy the exiting data
+    newFormData[fieldName] = fieldValue; // now we can get whatever typed in that specific input
 
-    setAddFormData(newFormData);
+    setAddFormData(newFormData); // update the state
   };
 
+  // when the form is submitted
   const handleAddFormSubmit = (event) => {
     event.preventDefault();
+
     const newContact = {
       id: nanoid(),
       fullName: addFormData.fullName,
+      address: addFormData.address,
+      phoneNumber: addFormData.phoneNumber,
+      email: addFormData.email,
     };
+
+    const newContacts = [...contacts, newContact]; // add the new contact to the contacts array
+    setContacts(newContacts); // update the state
+
+    
   };
 
   return (
@@ -55,7 +67,7 @@ function App() {
       </table>
 
       <h2>Add a contact</h2>
-      <form>
+      <form onSubmit={handleAddFormSubmit}>
         <input
           type="text"
           placeholder="Enter a Full Name..."
