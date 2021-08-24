@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import data from "./mock-data.json";
 import { nanoid } from "nanoid";
+import ReadOnlyRow from "./components/ReadOnlyRow";
+import EditableRow from "./components/EditableRow";
 
 function App() {
   const [contacts, setContacts] = useState(data);
@@ -13,6 +15,14 @@ function App() {
     phoneNumber: "",
   });
 
+  const [editFormData, setEditFormData] = useState({
+    fullName: "",
+    address: "",
+    email: "",
+    phoneNumber: "",
+  });
+  const [editContactId, setEditContactId] = useState(null);
+
   // handle form change
   const handleAddFormChange = (event) => {
     event.preventDefault();
@@ -23,6 +33,18 @@ function App() {
     newFormData[fieldName] = fieldValue; // now we can get whatever typed in that specific input
 
     setAddFormData(newFormData); // update the state
+  };
+
+  const handleEditFormChange = (event) => {
+    event.preventDefault();
+
+    const fieldName = event.target.getAttribute("name");
+    const fieldValue = event.target.value;
+
+    const newFormData = { ...editFormData };
+    newFormData[fieldName] = fieldValue;
+
+    setEditFormData(newFormData);
   };
 
   // when the form is submitted
@@ -39,33 +61,79 @@ function App() {
 
     const newContacts = [...contacts, newContact]; // add the new contact to the contacts array
     setContacts(newContacts); // update the state
+  };
 
-    
+  const handleEditClick = (event, contact) => {
+    event.preventDefault();
+    setEditContactId(contact.id);
+
+    const formValues = {
+      fullName: contact.fullName,
+      address: contact.address,
+      phoneNumber: contact.phoneNumber,
+      email: contact.email,
+    };
+
+    setEditFormData(formValues);
+  };
+
+  const handleEditFormSubmit = (event) => {
+    event.preventDefault();
+
+    const editedContact = {
+      id: editContactId,
+      fullName: editFormData.fullName,
+      address: editFormData.address,
+      phoneNumber: editFormData.phoneNumber,
+      email: editFormData.email,
+    };
+
+    const newContacts = [...contacts];
+
+    const index = contacts.findIndex((contact) => contact.id === editContactId);
+
+    newContacts[index] = editedContact;
+    setContacts(newContacts);
+    setEditContactId(null);
+  };
+
+  const handleCancelClick = () => {
+    setEditContactId(null);
   };
 
   return (
     <div className="app-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {contacts.map((contact) => (
+      <form onSubmit={handleEditFormSubmit}>
+        <table>
+          <thead>
             <tr>
-              <td>{contact.fullName}</td>
-              <td>{contact.address}</td>
-              <td>{contact.phoneNumber}</td>
-              <td>{contact.email}</td>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-
+          </thead>
+          <tbody>
+            {contacts.map((contact) => (
+              <>
+                {editContactId === contact.id ? (
+                  <EditableRow
+                    editFormData={editFormData}
+                    handleEditFormChange={handleEditFormChange}
+                    handleCancelClick={handleCancelClick}
+                  />
+                ) : (
+                  <ReadOnlyRow
+                    contact={contact}
+                    handleEditClick={handleEditClick}
+                  />
+                )}
+              </>
+            ))}
+          </tbody>
+        </table>
+      </form>
       <h2>Add a contact</h2>
       <form onSubmit={handleAddFormSubmit}>
         <input
