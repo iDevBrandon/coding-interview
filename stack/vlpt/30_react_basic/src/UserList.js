@@ -1,15 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import User from "./User";
 
 function UserList({ users, onRemove, onToggle }) {
-  useEffect(() => {
-    console.log("Mount on the screen");
-    // return cleaner ()
-    return () => {
-      console.log("Unmount from the screen");
-    };
-  }, []);
-
   return (
     <div>
       {users.map((user) => (

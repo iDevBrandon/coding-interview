@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const User = ({ user, onRemove, active, onToggle }) => {
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
   return (
     <div>
       <b
