@@ -5,7 +5,7 @@ const User = ({ user, onRemove }) => {
     <div>
       <b>
         {user.username} <span>({user.email})</span>
-        <small onClick={onRemove}>X</small>
+        <button onClick={() => onRemove(user.id)}>X</button>
       </b>
     </div>
   );

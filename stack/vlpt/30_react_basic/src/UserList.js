@@ -9,6 +9,7 @@ function UserList({ users, onRemove }) {
       console.log("Unmount from the screen");
     };
   }, []);
+  
   return (
     <div>
       {users.map((user) => (
