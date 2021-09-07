@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const User = ({ user, onRemove, active, onToggle }) => {
+const User = React.memo(function User({ user, onRemove, onToggle }) {
   useEffect(() => {
     console.log(user);
   }, [user]);
@@ -18,6 +18,6 @@ const User = ({ user, onRemove, active, onToggle }) => {
       <button onClick={() => onRemove(user.id)}>X</button>
     </div>
   );
-};
+});
 
 export default User;
