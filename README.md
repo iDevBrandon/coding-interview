@@ -165,5 +165,3 @@ algorithms-in-motion
 <https://daniel-park.tistory.com/category/Alogorithm?page=1>
 
 <https://github.com/trekhleb/javascript-algorithms>
-
-
