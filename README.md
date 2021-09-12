@@ -170,3 +170,6 @@ algorithms-in-motion
 
 TypeScript day!
 Gonna learn the basic & How to implement in React, Redux. Overall, have a project with React& Redux written in TypeScript
+
+## 12/09/2021
+Study hard algo, database and network(Assignment type coding test like fetching)
