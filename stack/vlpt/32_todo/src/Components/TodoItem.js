@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { MdDone, MdDelete } from "react-icons/md";
-import { useTodoDispatch } from "../components/TodoContext";
+import { useTodoDispatch } from "./TodoContext";
 
 const CheckCircle = styled.div`
   width: 32px;
