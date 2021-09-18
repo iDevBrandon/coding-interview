@@ -1,14 +1,14 @@
-import "./App.css";
+import React from "react";
 import { createGlobalStyle } from "styled-components";
-import TodoTemplate from "./Components/TodoTemplate";
-import TodoHead from "./Components/TodoHead";
-import TodoList from "./Components/TodoList";
-import TodoCreate from "./Components/TodoCreate";
-import { TodoProvider } from "./TodoContext";
+import TodoTemplate from "./components/TodoTemplate";
+import TodoHead from "./components/TodoHead";
+import TodoList from "./components/TodoList";
+import TodoCreate from "./components/TodoCreate";
+import { TodoProvider } from "./components/TodoProvider";
 
 const GlobalStyle = createGlobalStyle`
-  body 
-  { background: #e9ecfe;
+  body {
+    background: #e9ecef;
   }
 `;
 
