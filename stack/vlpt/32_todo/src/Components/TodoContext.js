@@ -34,7 +34,7 @@ function todoReducer(state, action) {
     case "REMOVE":
       return state.filter((todo) => todo.id !== action.id);
     default:
-      throw new Error(`Unhandled action type: ${action.type}`);
+      throw new Error("Unhandled action");
   }
 }
 
@@ -42,10 +42,9 @@ const TodoStateContext = createContext();
 const TodoDispatchContext = createContext();
 const TodoNextIdContext = createContext();
 
-export function TodoProvider({ children }) {
+export const TodoProvider = ({ children }) => {
   const [state, dispatch] = useReducer(todoReducer, initialTodos);
   const nextId = useRef(5);
-
   return (
     <TodoStateContext.Provider value={state}>
       <TodoDispatchContext.Provider value={dispatch}>
@@ -55,16 +54,25 @@ export function TodoProvider({ children }) {
       </TodoDispatchContext.Provider>
     </TodoStateContext.Provider>
   );
-}
+};
 
-export function useTodoState() {
-  return useContext(TodoStateContext);
-}
+export const useTodoState = () => {
+  const context = useContext(TodoStateContext);
+  if (!context) {
+    throw new Error("useTodoState must be used within a TodoProvider");
+  }
+};
 
-export function useTodoDispatch() {
-  return useContext(TodoDispatchContext);
-}
+export const useTodoDispatch = () => {
+  const context = useContext(TodoDispatchContext);
+  if (!context) {
+    throw new Error("useTodoDispatch must be used within a TodoProvider");
+  }
+};
 
-export function useTodoNextId() {
-  return useContext(TodoNextIdContext);
-}
+export const useTodoNextId = () => {
+  const context = useContext(TodoNextIdContext);
+  if (!context) {
+    throw new Error("useTodoNextId must be used within a TodoProvider");
+  }
+};
