@@ -30,13 +30,25 @@ const TodoHeadBlock = styled.div`
 `;
 
 const TodoHead = () => {
-  const context = useTodoState();
-  console.log(context);
+  // 1. check how many tasks are left
+  const todos = useTodoState();
+  const undones = todos.filter((todo) => !todo.done);
+
+  // 2. change today's date
+  let today = new Date();
+  const dateString = today.toLocaleString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const dayName = today.toLocaleString("en-GB", { weekday: "long" });
+
   return (
     <TodoHeadBlock>
-      <h1>2021.09.15 </h1>
-      <div className="day">Wed</div>
-      <div className="tasks-left">Left 3 more</div>
+      <h1>{dateString} </h1>
+      <div className="day">{dayName}</div>
+      <div className="tasks-left">Left {undones.length} more</div>
     </TodoHeadBlock>
   );
 };

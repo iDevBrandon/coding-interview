@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TodoItem from "./TodoItem";
+import { useTodoState } from "../components/TodoProvider";
 
 const TodoListBlock = styled.div`
   flex: 1;
@@ -9,12 +10,21 @@ const TodoListBlock = styled.div`
   overflow-y: auto;
 `;
 const TodoList = () => {
+  const todos = useTodoState();
+
   return (
     <TodoListBlock>
-      <TodoItem text="proejct setup" done={false} />
-      <TodoItem text="styling" done={true} />
-      <TodoItem text="context work" done={false} />
-      <TodoItem text="apply redux" done={true} />
+      {/* Display Todo  */}
+      {todos.map((todo) => {
+        return (
+          <TodoItem
+            key={todo.id}
+            id={todo.id}
+            text={todo.text}
+            done={todo.done}
+          />
+        );
+      })}
     </TodoListBlock>
   );
 };
