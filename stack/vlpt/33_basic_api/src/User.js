@@ -1,43 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import axios from "axios";
+import useAsync from "./useAsync";
 
-const User = () => {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+async function getUser(id) {
+  const response = await axios.get(
+    `https://jsonplaceholder.typicode.com/users/${id}`
+  );
+  return response.data;
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setUsers([]);
-        setError(false);
-        setLoading(true);
-        const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/users"
-        );
-        setUsers(response.data);
-      } catch (e) {
-        setError(e);
-      }
-      setLoading(false);
-    };
-
-    fetchData();
-  }, []);
+const User = ({ id }) => {
+  const [state] = useAsync(() => getUser(id), [id]);
+  const { loading, data: user, error } = state;
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Try again!</p>;
-  if (!users) return null;
+  if (error) return <p>Error!</p>;
+  if (!user) return null;
 
   return (
     <div>
-      {users.map((user) => (
-        <li key={user.id}>
-          <h3>
-            {user.username} - {user.name}
-          </h3>
-        </li>
-      ))}
+      <h2>{user.username}</h2>
+      <p>Email: {user.email}</p>
     </div>
   );
 };
