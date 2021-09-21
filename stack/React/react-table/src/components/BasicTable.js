@@ -57,13 +57,13 @@ const BasicTable = () => {
         })}
       </tbody>
       <tfoot>
-        {footerGroups.map((footerGroup) => {
+        {footerGroups.map((footerGroup) => (
           <tr {...footerGroup.getFooterGroupProps()}>
             {footerGroup.headers.map((column) => (
               <td {...column.getFooterProps}>{column.render("Footer")}</td>
             ))}
-          </tr>;
-        })}
+          </tr>
+        ))}
       </tfoot>
     </table>
   );
