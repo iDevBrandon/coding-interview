@@ -13,10 +13,10 @@ let answer = true;
 let count = 0;
 
 var containsDuplicate = function (nums) {
-  nums.sort();
+  nums.sort(); // sort the array to compare the next number with the previous one
 
   for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === nums[i + 1]) {
+    if (nums[i] === nums[i + 1]) { // if the current number is equal to the next number, return true
       return true;
     }
   }
