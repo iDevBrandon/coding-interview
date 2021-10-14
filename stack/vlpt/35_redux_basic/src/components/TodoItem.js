@@ -6,7 +6,7 @@ const TodoItem = ({ todo, onToggle }) => {
       style={{
         textDecoration: todo.done ? "line-through" : "none",
       }}
-      onClick={onToggle(todo.id)}
+      onClick={() => onToggle(todo.id)}
     >
       {todo.text}
     </li>
