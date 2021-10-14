@@ -63,4 +63,3 @@ dispatch({ type: ' INCREMENT'})
 
 ex) new Date(), Math.random(), axios.get() 같은 호출 할때마다 다른 결과를 만들어 낼 수 있기에 사용하면 안됩니다.
 주로 네트워크 요청과 같은 비동기 작업은 미들웨어를 통해 관리합니다.
-
