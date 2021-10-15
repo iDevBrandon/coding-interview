@@ -22,7 +22,7 @@ Redux-thunk 로 Promise 다루기
 5 A - Thunk 작성하기(생성)
 6 B - reducerUtils 작성하기 p.487
 7 C - createPromiseThunk로 리팩토링 p.495
-8 
+8 D - handleAsyncActions 작성하기 p.496
 9
 10
 11
