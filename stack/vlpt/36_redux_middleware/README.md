@@ -23,8 +23,8 @@ Redux-thunk 로 Promise 다루기
 6 B - reducerUtils 작성하기 p.487
 7 C - createPromiseThunk로 리팩토링 p.495
 8 D - handleAsyncActions 작성하기 p.496
-9 E - 포스트 리스트 구현하기
-10
+9 E - 포스트 리스트 구현하기. react-router-dom
+10 F - 라우터 연동, 특정 포스터 읽기 Route, Link 작성
 11
 12
 13
