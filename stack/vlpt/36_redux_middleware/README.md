@@ -20,9 +20,9 @@ Thunk는 특정 작업을 나중에 할 수 있도록 미루기 위해 함수 �
 
 Redux-thunk 로 Promise 다루기
 5 A - Thunk 작성하기(생성)
-6 B - reducerUtils 작성하기
-7 
-8
+6 B - reducerUtils 작성하기 p.487
+7 C - createPromiseThunk로 리팩토링 p.495
+8 
 9
 10
 11
