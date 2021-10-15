@@ -1,21 +1,13 @@
-const sleep = (n) => new Promise((resolve) => setTimeout(resolve, n));
-
-// {id, title, body}
-
-const posts = [
-  { id: 1, title: "Hello World", body: "Welcome to learning React!" },
-  { id: 2, title: "Redux-saga", body: "Todo list with Redux-saga" },
-  { id: 3, title: "Calendar", body: "You can update React from npm." },
-];
+import axios from "axios";
 
 export const getPosts = async () => {
-  await sleep(1000);
-  return posts;
+  const response = await axios.get("http://localhost:4000/posts");
+  return response.data;
 };
 
 export const getPostById = async (id) => {
-  await sleep(1000);
-  return posts.find((post) => post.id === id);
+  const response = await axios.get(`http://localhost:4000/posts/${id}`);
+  return response.data;
 };
 
-// 여기서 dummy api 가짜 비동기 함수를 만듬. 
+// 여기서 dummy api 가짜 비동기 함수를 만듬.
