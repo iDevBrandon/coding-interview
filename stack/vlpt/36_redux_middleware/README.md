@@ -25,7 +25,10 @@ Redux-thunk 로 Promise 다루기
 8 D - handleAsyncActions 작성하기 p.496
 9 E - 포스트 리스트 구현하기. react-router-dom
 10 F - 라우터 연동, 특정 포스터 읽기 Route, Link 작성
-11
+
+사용자 경험 개선
+11 A - 포스트 리스트 데이터 유지 및 포스트 데이터 초기화
+포스트 목록을 재로딩하는 문제를 해결
 12
 13
 14

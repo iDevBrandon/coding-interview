@@ -14,7 +14,7 @@ export const createPromiseThunk = (type, promiseCreator) => {
 };
 
 // 리듀서를 posts 안에서 사용해줌
-export const handleAsyncActions = (type, key) => {
+export const handleAsyncActions = (type, key, keepData) => {
   const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
 
   return (state, action) => {
@@ -22,7 +22,7 @@ export const handleAsyncActions = (type, key) => {
       case type:
         return {
           ...state,
-          [key]: reducerUtils.loading(),
+          [key]: reducerUtils.loading(keepData ? state[key].data : null),
         };
       case SUCCESS:
         return {
