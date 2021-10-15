@@ -6,6 +6,19 @@ const DECREASE = "DECREASE";
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({ type: DECREASE });
 
+// 일반 액션 객체를 반환하는 대신에 함수를 반환합니다
+export const increaseAsync = () => (dispatch) => {
+  setTimeout(() => {
+    dispatch(increase());
+  }, 1000);
+};
+
+export const decreaseAsync = () => (dispatch) => {
+  setTimeout(() => {
+    dispatch(decrease());
+  }, 1000);
+};
+
 // 초기상태
 const initialState = 0;
 
