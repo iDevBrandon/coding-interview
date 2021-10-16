@@ -33,9 +33,46 @@ Redux-thunk 로 Promise 다루기
 13 C - 유틸함수 작성 (리팩토링 again)
 14 Thunk 함수에서 리액트 라우터 History 사용하기
 15
-16
-17
-18
+16 run JSON server wit "npx json-server ./data.json --port 4000"
+17 redux-saga p.502
+redux-thunk는 함수 형태의 액션을 디스패치하여 미들웨어에서 해당 함수에 스토어의 dispatch와 getState를 파라미터로 넣어 사용하는 원리입니다.
+saga는 액션을 모니터를 하고 있다가, 특정 작업을 실행 할 수 있습니다.
+
+redux-saga는 Generator에 기반한 미들웨어
+
+제너레이터 함수라는 문법을 사용합니다. 핵심 기능은 함수를 작성할 때 함수를 특정 구간에 멈춰 놓을 수도 있고, 원할 떄 다시 돌아가게 할수도 있다.
+
+function genFunction() {
+    return 1;
+    return 2;
+    return 3;
+    return 4;
+    return 5;
+}
+
+function*generatorFunction() {
+    console.log('hello');
+    yield 1; // yield 를 사용하면 함수를 잠시멈춰두고, 1을 리턴
+    console.log('gen func');
+    yield 2;
+    console.log('function*');
+    yield 3;
+    return 4;
+}
+
+멈출때는 yield를 사용하고, 넘어 갈땐 next()를 사용
+
+ex)
+function* inifiniteAddGenerator(){
+    let result = 0;
+    while(true) {
+        result += yield result;
+    }
+}
+
+18 기초 비동기 카운터 구현
+redux-saga에서 제공하는 여러 유용한 유틸 함수를 사용하여 액션을 쉽게 처리할 수 있습니다.
+
 19
 20
 21
