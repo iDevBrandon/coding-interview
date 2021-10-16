@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
-import Greetings from "./Greetings";
+import MyForm from "./MyForm";
 
 function App() {
-  const onClick = (name: string) => {
-    console.log(name);
+  const onSubmit = (form: { name: string; description: string }) => {
+    console.log(form);
   };
-
   return (
     <div className="App">
-      <Greetings name="bran" onClick={onClick} />
+      <MyForm onSubmit={onSubmit} />
     </div>
   );
 }
