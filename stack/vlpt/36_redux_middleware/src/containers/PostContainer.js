@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Post from "../components/Post";
-import { getPost, goToHome } from "../modules/posts";
+import { getPost, goToHome, printState } from "../modules/posts";
 
 const PostContainer = ({ postId }) => {
   const { data, loading, error } = useSelector(
@@ -21,6 +21,8 @@ const PostContainer = ({ postId }) => {
   return (
     <>
       <button onClick={() => dispatch(goToHome())}>To Home</button>
+      <button onClick={() => dispatch(printState())}>상태 출력</button>
+
       <Post post={data} />
     </>
   );

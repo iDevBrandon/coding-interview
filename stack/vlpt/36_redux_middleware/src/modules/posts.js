@@ -8,7 +8,7 @@ import {
   createPromiseSaga,
   createPromiseSagaById,
 } from "../lib/asyncUtils";
-import { takeEvery, getContext } from "redux-saga/effects";
+import { takeEvery, getContext, select } from "redux-saga/effects";
 // 액션 타입을 선언
 // 한 요청당 세 개를 만들어야함.
 
@@ -22,6 +22,7 @@ const GET_POST_ERROR = "GET_POST_ERROR";
 
 const CLEAR_POST = "CLEAR_POST";
 const GO_TO_HOME = "GO_TO_HOME";
+const PRINT_STATE = "PRINT_STATE";
 
 // thunk 함수를 생성합니다
 // thunk 함수 내부에서는 시작할 때, 성공했을 떄, 실패했을 때 다른 액션을 디스패치합니다
@@ -78,16 +79,23 @@ function* goToHomeSaga() {
   history.push("/");
 }
 
+function* printStateSaga() {
+  const state = yield select((state) => state.posts);
+  console.log(state);
+}
+
 // 액션을 모니터를 하는 작업
 export function* postsSaga() {
   yield takeEvery(GET_POSTS, getPostsSaga);
   yield takeEvery(GET_POST, getPostSaga);
   yield takeEvery(GO_TO_HOME, goToHomeSaga);
+  yield takeEvery(PRINT_STATE, printStateSaga);
 }
 
 export const goToHome = () => ({ type: GO_TO_HOME });
 
 export const clearPost = () => ({ type: CLEAR_POST });
+export const printState = () => ({ type: PRINT_STATE });
 // 초기상태 선언 & 리듀서 작성
 
 const initialState = {
