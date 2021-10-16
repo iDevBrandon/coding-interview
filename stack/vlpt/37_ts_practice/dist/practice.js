@@ -1,0 +1,12 @@
+"use strict";
+var count = 0;
+count += 1;
+var message = "Hello world";
+var done = true;
+var numbers = [1, 2, 3];
+var messages = ["Hello", "world"];
+messages.push("2");
+var mightBeUndefined = undefined;
+var nullableNumber = null;
+var color = "red";
+color = "yellow";
