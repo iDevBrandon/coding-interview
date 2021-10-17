@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
+
+type Action = { type: "INCREMENT" } | { type: "DECREMENT" };
+
+function reducer(state: number, action: Action): number {
+  switch (action.type) {
+    case "INCREMENT":
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
+    default:
+      throw new Error("Unexpected action");
+  }
+}
 
 const Counter = () => {
-  const [count, setCount] = useState<number>(0);
-
-  const onIncrease = () => setCount(count + 1);
-  const onDecrease = () => setCount(count - 1);
+  const [count, dispatch] = useReducer(reducer, 0);
+  const onIncrease = () => dispatch({ type: "INCREMENT" });
+  const onDecrease = () => dispatch({ type: "DECREMENT" });
   return (
     <div>
       <h1>{count}</h1>
