@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
 import ReducerSample from "./ReducerSample";
+import { SampleProvider } from "./SampleContext";
 
 function App() {
   return (
     <div className="App">
-      <ReducerSample />
+      <SampleProvider>
+        <ReducerSample />
+      </SampleProvider>
     </div>
   );
 }
