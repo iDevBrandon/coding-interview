@@ -1,8 +1,9 @@
-// expects a parameter to be either a number or a string
+type Combiable = number | string;
+
 let result;
 function add(
-  input1: number | string,
-  input2: number | string,
+  input1: Combiable,
+  input2: Combiable,
   resultConvension: "as-number" | "as-text"
 ) {
   if (typeof input1 === "number" && typeof input2 === "number") {

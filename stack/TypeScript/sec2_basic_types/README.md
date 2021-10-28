@@ -40,3 +40,7 @@ expects a parameter to be either a number or a string
 ### 23. literal types
 
 resultConvenstion : 'as-text' | 'as-number'
+
+### 24. type aliases / Custom types
+
+we might get borther of union types.
