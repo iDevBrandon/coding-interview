@@ -32,3 +32,7 @@ enum {NEW, OLD}
 ### 21. any
 
 Avoid as much as you can.
+
+### 22. Union types
+
+expects a parameter to be either a number or a string
