@@ -36,3 +36,7 @@ Avoid as much as you can.
 ### 22. Union types
 
 expects a parameter to be either a number or a string
+
+### 23. literal types
+
+resultConvenstion : 'as-text' | 'as-number'
