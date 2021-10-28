@@ -10,4 +10,7 @@ const num1 = 5;
 const num2 = 2.4;
 const showResult = true;
 
+let favoriateAcitives: string[];
+favoriateAcitives = ["swimming", "running"];
+
 add(num1, num2, showResult);

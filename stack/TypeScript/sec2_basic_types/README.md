@@ -15,3 +15,12 @@ boolean : true or false
 Ts main job is telling the types and yelling at us.
 
 ### 16. object types
+
+### 17. Array types
+
+### 19. Working with Tuples
+
+New types are introduced in TS
+ex) [1,2], it looks like an array but its fixed length array
+
+Tuples tell us the type of each element in the array
