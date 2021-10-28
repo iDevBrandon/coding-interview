@@ -44,3 +44,7 @@ resultConvenstion : 'as-text' | 'as-number'
 ### 24. type aliases / Custom types
 
 we might get borther of union types.
+
+### 26. Function return types & "void"
+
+void is used to tell the function to return nothing
