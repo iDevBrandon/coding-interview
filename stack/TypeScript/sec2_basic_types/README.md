@@ -24,3 +24,7 @@ New types are introduced in TS
 ex) [1,2], it looks like an array but its fixed length array
 
 Tuples tell us the type of each element in the array
+
+### 20. Enums
+
+enum {NEW, OLD}

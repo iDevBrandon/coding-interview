@@ -13,4 +13,13 @@ const showResult = true;
 let favoriateAcitives: string[];
 favoriateAcitives = ["swimming", "running"];
 
+enum Role { ADMIN, READ_ONLY, AUTHOR };
+
+const person2 = {
+  name: "Max",
+  age: 30,
+  hobbies: ["Sports", "Cooking"],
+  role: Role.ADMIN
+};
+
 add(num1, num2, showResult);
