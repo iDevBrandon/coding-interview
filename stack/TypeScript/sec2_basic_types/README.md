@@ -13,3 +13,5 @@ boolean : true or false
 ## 15. Type Assignment & Type Inference
 
 Ts main job is telling the types and yelling at us.
+
+### 16. object types
