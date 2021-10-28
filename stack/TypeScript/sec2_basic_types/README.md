@@ -28,3 +28,7 @@ Tuples tell us the type of each element in the array
 ### 20. Enums
 
 enum {NEW, OLD}
+
+### 21. any
+
+Avoid as much as you can.
