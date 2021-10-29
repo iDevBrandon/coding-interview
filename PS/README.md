@@ -27,6 +27,10 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
+### free resources
+[Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
+[Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
+
 ## 자주나오는 유형
 
 완전 탐색(BFS, DFS, 이분 탐색 등)
