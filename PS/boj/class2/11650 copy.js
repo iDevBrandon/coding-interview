@@ -1,4 +1,5 @@
-const input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+const fs = require("fs");
+const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
 
 const N = input.shift();
 const coordsArr = input.map((coords) =>
