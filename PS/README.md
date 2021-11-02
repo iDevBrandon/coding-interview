@@ -28,6 +28,7 @@ process.exit();
 });
 
 ### free resources
+
 [Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
 [Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
 
@@ -40,14 +41,17 @@ process.exit();
 그리디 알고리즘
 브루트 포스
 
-## 2021/04/30
+## Big O Notation
 
-leetcode, BOJ,
+Iterating over a collection Or using N as a pointer with a for loop => O(N)
+Iterating over the same collection with nested for loops => O(N^2)
+Iterating over different collection with nested for loops => O(N * M)
 
-|                                Number                                 |              Title              |   Result    |
-| :-------------------------------------------------------------------: | :-----------------------------: | :---------: |
-|             [2750](https://www.acmicpc.net/problem/2750)              |          Sort numbers           |   success   |
-| [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | best-time-to-buy-and-sell-stock |   Failed    |
+## Space complexity VS. Time complexity
 
-### Greedy
+Space complexity: How much more memory use(RAM) do we need as the inputs provided to the code gets larger?
+Time complexity: How much runtime(more time) do we need to execute the code as the inputs provided to the code gets larger?
 
+## Logarithmic time complexity
+
+If the input is doubled, then we only have to do one more operation.
