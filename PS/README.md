@@ -2,8 +2,7 @@
 
 ## realine module
 
-const input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
-
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n'); // sometimes, remove trim()
 ## fs module
 
 // Run by Node.js
