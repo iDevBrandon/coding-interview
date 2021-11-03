@@ -2,7 +2,10 @@
 
 ## realine module
 
-const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n'); // sometimes, remove trim()
+// sometimes, remove trim()
+
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+
 ## fs module
 
 // Run by Node.js
@@ -44,7 +47,7 @@ process.exit();
 
 Iterating over a collection Or using N as a pointer with a for loop => O(N)
 Iterating over the same collection with nested for loops => O(N^2)
-Iterating over different collection with nested for loops => O(N * M)
+Iterating over different collection with nested for loops => O(N \* M)
 
 ## Space complexity VS. Time complexity
 
