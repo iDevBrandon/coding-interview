@@ -22,14 +22,11 @@ Component Life Cycle
 
 ## Study order
 
+<https://zero-base.co.kr/event/school_FE?utm_source=facebook&utm_medium=paid&utm_campaign=school_FE_conv_all_dr&utm_content=set1_ad15&external_browser_redirect=true&fbclid=IwAR3GEAkkmrLfEGK4vo1zCez-y_SFxQI8NZbVk87CccimR8uW9wPKzsbzrcc>
+
 PS >>>>>> CS >> Projects
 
-1.VanillaJS + Theory
-2. JS project
-3. PS
-4. React with Redux
-5. CS with JS Interview
-6. Projects
+1.VanillaJS + Theory 2. JS project 3. PS 4. React with Redux 5. CS with JS Interview 6. Projects
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
@@ -37,19 +34,19 @@ PS >>>>>> CS >> Projects
 
 ## 📚 [JavaScript](https://github.com/iDevBrandon/web-dev/tree/main/stack/JavaScript)
 
-* [callback, promise]
-* [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
-* [callstack, event loop, Execution Context]
-* [ES6: Promise](./docs/Javascript/Promise.md)
-* [Prototype]
+- [callback, promise]
+- [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
+- [callstack, event loop, Execution Context]
+- [ES6: Promise](./docs/Javascript/Promise.md)
+- [Prototype]
 
 [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 
 ## 📘 [React](https://github.com/iDevBrandon/web-dev/tree/main/stack/React)
 
-* React class based component vs functional component
-* React + Redux
-* React + TypeScript
+- React class based component vs functional component
+- React + Redux
+- React + TypeScript
 
 Next.js
 
@@ -61,10 +58,10 @@ AWS amplify
 
 ## Interesting BM
 
-| Entity | Job Position  |
-| ------ | ------------- |
-| [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front  |
-| [mintit](https://mintit.co.kr/introduce/aboutMintit.do) | Web  |
+| Entity                                                   | Job Position |
+| -------------------------------------------------------- | ------------ |
+| [Oil now](https://mintit.co.kr/introduce/aboutMintit.do) | Front        |
+| [mintit](https://mintit.co.kr/introduce/aboutMintit.do)  | Web          |
 
 ## PS & CS
 

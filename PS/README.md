@@ -2,13 +2,13 @@
 
 ## realine module
 
-// sometimes, remove trim()
+sometimes, remove trim()
 
 const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 
 ## fs module
 
-// Run by Node.js
+Run by Node.js
 
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -29,9 +29,12 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
-### study source
+### study order
 
-Stack & Queue
+#### Stack & Queue
+
+Stack - Last in Last Out (LIFO)
+Queue - First in First Out (FIFO)
 <https://www.youtube.com/watch?v=1AJ4ldcH2t4>
 
 ### free resources
