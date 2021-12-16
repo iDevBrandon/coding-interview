@@ -29,6 +29,11 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
+### study source
+
+Stack & Queue
+<https://www.youtube.com/watch?v=1AJ4ldcH2t4>
+
 ### free resources
 
 [Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
