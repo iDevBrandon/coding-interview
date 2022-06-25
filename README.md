@@ -58,6 +58,9 @@ AWS amplify
 
 https://www.udemy.com/course/understanding-typescript/
 
+## Testing & Clean Code
+
+
 ## Interesting BM
 
 | Entity                                                   | Job Position |
