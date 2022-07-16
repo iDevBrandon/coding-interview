@@ -1,4 +1,12 @@
-# FE Interview questions
+# FE skill set
+
+- Redux
+- React query 
+- Next.js
+- GraphQL & Apollo
+- Testing 
+
+## FE Interview questions
 
 ## General(Frontend Stack)
 
