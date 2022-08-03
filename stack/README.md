@@ -92,7 +92,7 @@ https://medium.com/p/db9b7b06a909/edit - will update in English soon
 SPA(Single Page Application) - rendering partly each components. Ex) React,View and Angular.
 Request source code to server and create static page
 
-Drawback of CSR
+Drawback of CSR 
 
 1. Initial Loading may take too long
 2. Low SEO
