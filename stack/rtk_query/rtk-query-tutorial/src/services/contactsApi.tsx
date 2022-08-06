@@ -4,14 +4,17 @@ import { Contact } from "../models/contact.model";
 export const contactsApi = createApi({
   reducerPath: "contacts",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000/" }),
+  tagTypes: ["Contact"],
   endpoints: (builder) => ({
     contacts: builder.query<Contact[], void>({
       query: () => "/contacts",
+      providesTags: ["Contact"],
     }),
 
     // fetch a single contact
     contact: builder.query<Contact, string>({
       query: (id) => `/contacts/${id}`,
+      providesTags: ["Contact"], 
     }),
 
     // create a new contact
@@ -21,6 +24,7 @@ export const contactsApi = createApi({
         method: "POST",
         body: contact,
       }),
+      invalidatesTags: ["Contact"],
     }),
 
     // update an existing contact
@@ -30,6 +34,7 @@ export const contactsApi = createApi({
         method: "PUT",
         body: rest,
       }),
+      invalidatesTags: ["Contact"],
     }),
 
     // delete an existing contact
@@ -38,6 +43,7 @@ export const contactsApi = createApi({
         url: `/contacts/${id}`,
         method: "DELETE",
       }),
+      invalidatesTags: ["Contact"],
     }),
   }),
 });
