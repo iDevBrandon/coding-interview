@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
-import { useContactQuery, useContactsQuery } from "./services/contactsApi";
+import {
+  useAddContactMutation,
+  useContactQuery,
+  useContactsQuery,
+} from "./services/contactsApi";
 
 function App() {
   const { data, error, isLoading, isFetching, isSuccess } = useContactsQuery();
@@ -22,6 +26,9 @@ function App() {
           ))}
         </div>
       )}
+      <div>
+        <AddContact />
+      </div>
     </div>
   );
 }
@@ -29,6 +36,27 @@ function App() {
 export const ContactDetail = ({ id }: { id: string }) => {
   const { data } = useContactQuery(id);
   return <pre>{JSON.stringify(data, undefined, 2)}</pre>;
+};
+
+export const AddContact = () => {
+  const [addContact] = useAddContactMutation();
+  const { refetch } = useContactsQuery();
+  const contact = {
+    id: "8",
+    name: "asb Doe",
+    email: "john@gm.com",
+  };
+
+  const addHandler = async () => {
+    await addContact(contact);
+    refetch();
+  };
+
+  return (
+    <div>
+      <button onClick={addHandler}>Add contact</button>
+    </div>
+  );
 };
 
 export default App;
