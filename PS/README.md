@@ -1,4 +1,12 @@
-# Basic input and output of JavaScript(Node.js)
+# 💻 Algorithm Coding Test
+
+### DBA study resources
+
+### 💪 Do at least 1~2 problem solving
+
+<br />
+
+## Basic input and output of JavaScript(Node.js)
 
 ## realine module
 
@@ -37,10 +45,13 @@ Stack - Last in Last Out (LIFO)
 Queue - First in First Out (FIFO)
 <https://www.youtube.com/watch?v=1AJ4ldcH2t4>
 
+<br />
+
 ### free resources
 
-[Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
-[Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
+1. [Neetcode.io](https://neetcode.io/)
+2. [Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
+3. [Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
 
 ## 자주나오는 유형
 
