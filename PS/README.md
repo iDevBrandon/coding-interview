@@ -37,14 +37,6 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
-### study order
-
-#### Stack & Queue
-
-Stack - Last in Last Out (LIFO)
-Queue - First in First Out (FIFO)
-<https://www.youtube.com/watch?v=1AJ4ldcH2t4>
-
 <br />
 
 ### free resources
@@ -53,7 +45,17 @@ Queue - First in First Out (FIFO)
 2. [Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
 3. [Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
 
-## 자주나오는 유형
+<br />
+
+### study order
+
+1. Stack - Last in Last Out (LIFO)
+   Queue - First in First Out (FIFO)
+   <https://www.youtube.com/watch?v=1AJ4ldcH2t4>
+
+<br />
+
+## Frequent type of problem
 
 완전 탐색(BFS, DFS, 이분 탐색 등)
 동적 계획법(DP)
@@ -61,6 +63,8 @@ Queue - First in First Out (FIFO)
 트리, 그래프
 그리디 알고리즘
 브루트 포스
+
+<br />
 
 ## Big O Notation
 
