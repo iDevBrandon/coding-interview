@@ -4,8 +4,8 @@
 
 Solved.ac에서 Gold5를 목표로
 완전 탐색(BFS, DFS, 이분 탐색 등)
-동적 계획법(DP)
-문자열 처리
+Dynamic Programming(DP)
+string
 트리, 그래프
 그리디 알고리즘
 브루트 포스
@@ -55,6 +55,11 @@ Next.js + Apollo + MongoDB + TypeScript
 AWS amplify
 
 ## 🧩 TypeScript
+
+https://www.udemy.com/course/understanding-typescript/
+
+## Testing & Clean Code
+
 
 ## Interesting BM
 
