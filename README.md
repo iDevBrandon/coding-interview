@@ -1,7 +1,12 @@
 # 👨‍💻 Web Dev
 
+PS >>>>>> CS >> Projects
+
+1.VanillaJS + Theory 2. JS project 3. PS 4. React with Redux 5. CS with JS Interview 6. Projects
+
 ## 1. Coding Test
 
+with inflearn
 Solved.ac에서 Gold5를 목표로
 완전 탐색(BFS, DFS, 이분 탐색 등)
 Dynamic Programming(DP)
@@ -23,10 +28,6 @@ Component Life Cycle
 ## Study order
 
 <https://zero-base.co.kr/event/school_FE?utm_source=facebook&utm_medium=paid&utm_campaign=school_FE_conv_all_dr&utm_content=set1_ad15&external_browser_redirect=true&fbclid=IwAR3GEAkkmrLfEGK4vo1zCez-y_SFxQI8NZbVk87CccimR8uW9wPKzsbzrcc>
-
-PS >>>>>> CS >> Projects
-
-1.VanillaJS + Theory 2. JS project 3. PS 4. React with Redux 5. CS with JS Interview 6. Projects
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
 
@@ -59,7 +60,6 @@ AWS amplify
 https://www.udemy.com/course/understanding-typescript/
 
 ## Testing & Clean Code
-
 
 ## Interesting BM
 
