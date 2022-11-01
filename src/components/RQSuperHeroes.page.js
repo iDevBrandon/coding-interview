@@ -3,9 +3,13 @@ import React from "react";
 import { useQuery } from "react-query";
 
 export const RQSuperHeroesPage = () => {
-  const { isLoading, data } = useQuery("super-heros", () => {
-    return axios.get("http://localhost:4000/superheroes");
+  const { isLoading, data, isError, error } = useQuery("super-heros", () => {
+    return axios.get("http://localhost:4000/superheroes1");
   });
+
+  if (isError) {
+    return <div>{error.message}</div>
+  }
   if (isLoading) {
     return <div>Loading...</div>;
   }
