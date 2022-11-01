@@ -1,3 +1,5 @@
+import React from "react";
+
 export const RQSuperHeroesPage = () => {
-  return <h2>React Query Super Heroes Page</h2>
-}
+  return <div>rqs</div>;
+};
