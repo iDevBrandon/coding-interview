@@ -1,1 +1,3 @@
 # React query
+
+## Query Cache
