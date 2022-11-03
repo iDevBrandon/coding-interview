@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Wonder Woman 12",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "bruce ",
+      "alterEgo": "wayne",
+      "id": 4
     }
   ],
   "friends": [
@@ -39,7 +44,11 @@
   "channels": [
     {
       "id": "codevolution",
-      "courses": ["Michal", "Kris", "vue"]
+      "courses": [
+        "Michal",
+        "Kris",
+        "vue"
+      ]
     }
   ],
   "colors": [
