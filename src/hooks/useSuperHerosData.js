@@ -1,12 +1,15 @@
 import axios from "axios";
 import { useQuery, useMutation, useQueryClient } from "react-query";
+import { request } from "../util/axios-utils";
 
 const fetchSuperHeros = () => {
-  return axios.get("http://localhost:4000/superheroes");
+  // return axios.get("http://localhost:4000/superheroes");
+  return request({ url: "/superheroes" });
 };
 
 const addSuperHero = (hero) => {
-  return axios.post("http://localhost:4000/superheroes", hero);
+  // return axios.post("http://localhost:4000/superheroes", hero);
+  return request({ url: "/superheroes", method: "POST", data: hero });
 };
 
 export const useSuperHerosData = (onSuccess, onError) => {
