@@ -20,3 +20,5 @@ Step 2. use Query for options. initialData is a function
 
 Gives a better UX for the user interface
 without loading indicator
+
+## Mutations
