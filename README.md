@@ -11,3 +11,12 @@
 ## Parallel Queries
 
 Our goal is to fetch both superheros and freinds
+
+## Initial Query data
+
+Step 1. Need to access to query client to get client instance has access to query cache which has access to set initial data
+
+Step 2. use Query for options. initialData is a function
+
+Gives a better UX for the user interface
+without loading indicator

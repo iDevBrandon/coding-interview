@@ -23,11 +23,11 @@
     },
     {
       "id": 2,
-      "name": "Ana" 
+      "name": "Ana"
     },
     {
       "id": 3,
-      "name": "Hope" 
+      "name": "Hope"
     }
   ],
   "users": [
@@ -40,6 +40,40 @@
     {
       "id": "codevolution",
       "courses": ["Michal", "Kris", "vue"]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "orange"
+    },
+    {
+      "id": 3,
+      "label": "yellow"
+    },
+    {
+      "id": 4,
+      "label": "green"
+    },
+    {
+      "id": 5,
+      "label": "blue"
+    },
+    {
+      "id": 6,
+      "label": "white"
+    },
+    {
+      "id": 7,
+      "label": "black"
+    },
+    {
+      "id": 8,
+      "label": "purple"
     }
   ]
 }
