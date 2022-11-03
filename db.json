@@ -19,6 +19,11 @@
       "name": "bruce ",
       "alterEgo": "wayne",
       "id": 4
+    },
+    {
+      "name": "shazam",
+      "alterEgo": "hello",
+      "id": 5
     }
   ],
   "friends": [
