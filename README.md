@@ -57,7 +57,7 @@ AWS amplify
 
 ## 🧩 TypeScript
 
-https://www.udemy.com/course/understanding-typescript/
+<https://www.udemy.com/course/understanding-typescript/>
 
 ## Testing & Clean Code
 
