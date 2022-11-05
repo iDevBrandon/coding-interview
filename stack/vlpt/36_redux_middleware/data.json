@@ -1,7 +1,0 @@
-{
-  "posts": [
-    { "id": 1, "title": "Hello World", "body": "Welcome to learning React!" },
-    { "id": 2, "title": "Redux-saga", "body": "Todo list with Redux-saga" },
-    { "id": 3, "title": "Calendar", "body": "You can update React from npm." }
-  ]
-}
