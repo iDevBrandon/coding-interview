@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { BiUserPlus } from "react-icons/bi";
 
 export default function Home() {
   return (
@@ -11,7 +12,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <main className="py-5">
+        <h1 className="text-xl md:text-5xl text-center font-bold py-10">
+          Employee Management
+        </h1>
+
+        <div className="container mx-auto flex justify-between py-5 border-b">
+          <div className="left flex gap-3">
+            <button className="flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-grary-50 hover:border-indigo-500 hover:text-gray-800">
+              Add Employee{" "}
+              <span className="px-1">
+                <BiUserPlus size={23}></BiUserPlus>
+              </span>
+            </button>
+          </div>
+
+          {/* collapsable form */}
+
+          {/* table */}
+        </div>
+      </main>
     </div>
   );
 }
