@@ -1,5 +1,7 @@
 # [React Query](youtube.com/watch?v=MArE6Hy371c)
 
+<https://www.youtube.com/watch?v=41tFNtwWE3o&t=32s>
+
 ## 상태관리 라이브러리 : 리덕스, MobX
 
 ## 상태란?
@@ -37,7 +39,7 @@ RTK를 써도 api 호출/대기중/응답으로 나뉘는 액션들을 정의하
 Client에서 관리하는 일반적인 상태들의 특성과는 다르죠?
 어쩌면 다른 관리방법이 있다면 좋을지도?
 
-## 상태를 2 가지로 나누어 봅시다.
+## 상태를 2 가지로 나누어 봅시다
 
 ## Client state vs Server state
 
@@ -95,7 +97,17 @@ function App() {
 }
 ```
 
+## Mutations
+
+Mutations는 데이터 생성/수정/삭제 용도!
+
+## Query Invalidation
+
+간단히 queryClient를 통해 invalidate 메소들글 호출하면 끝!
+
+해당 Key를 가진 query는 stale 취급되고, 현재 rendering 되고 있는 query들은 백그라운드에서 refetch 됩니다.
+
 ## Reference
 
-https://tkdodo.eu/blog/practical-react-query
-https://parang.gatsbyjs.io/react/2022-react-01/
+<https://tkdodo.eu/blog/practical-react-query>
+<https://parang.gatsbyjs.io/react/2022-react-01/>
