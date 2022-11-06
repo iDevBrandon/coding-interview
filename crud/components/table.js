@@ -1,11 +1,11 @@
 import React from "react";
 import { BiEdit, BiTrashAlt } from "react-icons/bi";
 // import data from "../database/data.json";
-import { getUser } from "../lib/helper";
+import { getUsers } from "../lib/helper";
 import { useQuery } from "@tanstack/react-query";
 
 const Table = () => {
-  const { isLoading, error, data, isError } = useQuery(["users"], getUser);
+  const { isLoading, error, data, isError } = useQuery(["users"], getUsers);
 
   if (isLoading) {
     return <div>Loading...</div>;
