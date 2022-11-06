@@ -1,5 +1,6 @@
 import connectMongo from "../../../database/conn";
 import {
+  getUser,
   getUsers,
   postUser,
   updateUser,
@@ -15,11 +16,9 @@ export default async function handler(req, res) {
 
   switch (method) {
     case "GET":
-      getUsers(req, res);
+      getUser(req, res);
       break;
-    case "POST":
-      postUser(req, res);
-      break;
+
     case "PUT":
       updateUser(req, res);
       break;

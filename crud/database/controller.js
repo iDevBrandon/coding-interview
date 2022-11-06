@@ -10,6 +10,21 @@ export async function getUsers(req, res) {
   }
 }
 
+export async function getUser(req, res) {
+  try {
+    const { userId } = req.query;
+
+    if (userId) {
+      const user = await Users.findById(userId);
+      res.status(200).json(user);
+    } else {
+      res.status(404).json({ error: "User not selected" });
+    }
+  } catch (error) {
+    return res.status(404).json({ error: "Error while getting user" });
+  }
+}
+
 export async function postUser(req, res) {
   try {
     const formData = req.body;
