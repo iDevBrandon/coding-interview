@@ -9,8 +9,8 @@ const formReducer = (state, event) => {
   };
 };
 
-export default function UpdateUserForm() {
-  const [formData, setFormData] = useReducer(formReducer, {});
+export default function UpdateUserForm({_id, formData, setFormData}) {
+  // const [formData, setFormData] = useReducer(formReducer, {});
 
   const handleSubmit = (event) => {
     event.preventDefault();
