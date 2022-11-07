@@ -2,16 +2,18 @@ const BASE_URL = "http://localhost:3000";
 
 // Get users
 export const getUsers = async () => {
-  const res = await fetch(`${BASE_URL}/api/users`).json();
+  const res = await fetch(`${BASE_URL}/api/users`);
+  const json = await res.json();
 
-  return res;
+  return json;
 };
 
 // Get a user
 export const getUser = async (userId) => {
-  const res = await fetch(`${BASE_URL}/api/users/${userId}`).json();
+  const res = await fetch(`${BASE_URL}/api/users/${userId}`);
+  const json = await res.json();
 
-  if (res) return res;
+  if (json) return json;
   return {};
 };
 
@@ -24,8 +26,9 @@ export const addUser = async (formData) => {
       body: JSON.stringify(formData),
     };
 
-    const response = await fetch(`${BASE_URL}/api/users`, options).json();
-    return response;
+    const response = await fetch(`${BASE_URL}/api/users`, options);
+    const json = await response.json();
+    return json;
   } catch (err) {
     return err;
   }
@@ -40,11 +43,9 @@ export const updateUser = async (userId, formData) => {
       body: JSON.stringify(formData),
     };
 
-    const response = await fetch(
-      `${BASE_URL}/api/users/${userId}`,
-      options
-    ).json();
-    return response;
+    const response = await fetch(`${BASE_URL}/api/users/${userId}`, options);
+    const json = await response.json();
+    return json;
   } catch (err) {
     return err;
   }
@@ -57,11 +58,9 @@ export const deleteUser = async (userId) => {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     };
-    const response = await fetch(
-      `${BASE_URL}/api/users/${userId}`,
-      options
-    ).json();
-    return response;
+    const response = await fetch(`${BASE_URL}/api/users/${userId}`, options);
+    const json = await response.json();
+    return json;
   } catch (err) {
     return err;
   }
