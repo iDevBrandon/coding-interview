@@ -4,7 +4,7 @@ const initialState = {
   client: { toggleForm: false },
 };
 
-export const AppSlice = createSlice({
+const AppSlice = createSlice({
   name: "app",
   initialState,
   reducers: {
@@ -14,6 +14,6 @@ export const AppSlice = createSlice({
   },
 });
 
-export const { toggleChangeAction } = AppSlice.actions;
-
-export default AppSlice.reducer;
+const { reducer, actions } = AppSlice;
+export const { toggleChangeAction } = actions;
+export default reducer;
