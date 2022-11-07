@@ -1,6 +1,8 @@
 import { useReducer } from "react";
 import { BiPlus } from "react-icons/bi";
 import Success from "./success";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { addUser, getUsers } from "../lib/helper";
 
 const formReducer = (state, event) => {
   return {
@@ -10,19 +12,45 @@ const formReducer = (state, event) => {
 };
 
 export default function AddUserForm() {
+  const queryClient = useQueryClient();
   const [formData, setFormData] = useReducer(formReducer, {});
+  const addMutation = useMutation(addUser, {
+    onSuccess: () => {
+      queryClient.prefetchQuery(["users"], getUsers);
+    },
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log(formData);
     if (Object.keys(formData).length == 0)
       return console.log("Don't have Form Data");
+
+    let { firstname, lastname, email, salary, date, status } = formData;
+
+    const model = {
+      name: `${firstname} ${lastname}`,
+      avatar: `https://randomuser.me/api/portraits/men/${Math.floor(
+        Math.random() * 10
+      )}.jpg`,
+      email,
+      salary,
+      date,
+      status: status ?? "Active",
+    };
+
+    addMutation.mutate(model);
   };
 
-  if (Object.keys(formData).length > 0) {
-    return <Success message={"Data added"} />;
-  }
+  // if (Object.keys(formData).length > 0) {
+  //   return <Success message={"Data added"} />;
+  // }
+
+  if (addMutation.isLoading) return <div>Loading...</div>;
+  if (addMutation.isError)
+    return <Bug message={addMutation.error.message}></Bug>;
+  if (addMutation.isSuccess) return <Success message={"Data added"} />;
+
   return (
     <form className="grid lg:grid-cols-2 w-4/6 gap-4" onSubmit={handleSubmit}>
       <div className="input-type">

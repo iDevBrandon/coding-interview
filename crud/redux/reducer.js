@@ -1,19 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+// import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  client: { toggleForm: false },
-};
+// const initialState = {
+//   client: { toggleForm: false },
+// };
 
-export const ReducerSlice = createSlice({
-  name: "crudapp",
-  initialState,
-  reducers: {
-    toggleChangeAction: (state) => {
-      state.client.toggleForm = !state.client.toggleForm;
-    },
-  },
-});
+// export const ReducerSlice = createSlice({
+//   name: "crudapp",
+//   initialState,
+//   reducers: {
+//     toggleChangeAction: (state) => {
+//       state.client.toggleForm = !state.client.toggleForm;
+//     },
+//   },
+// });
 
-export const { toggleChangeAction } = ReducerSlice.actions;
+// export const { toggleChangeAction } = ReducerSlice.actions;
 
-export default ReducerSlice.reducer;
+// export default ReducerSlice.reducer;
