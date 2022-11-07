@@ -3,9 +3,13 @@ import { BiEdit, BiTrashAlt } from "react-icons/bi";
 // import data from "../database/data.json";
 import { getUsers } from "../lib/helper";
 import { useQuery } from "@tanstack/react-query";
+import { useSelector } from "react-redux";
 
 const Table = () => {
   const { isLoading, error, data, isError } = useQuery(["users"], getUsers);
+
+  const visible = useSelector((state) => state);
+  console.log(visible);
 
   if (isLoading) {
     return <div>Loading...</div>;
