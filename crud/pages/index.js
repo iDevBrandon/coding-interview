@@ -5,12 +5,14 @@ import { BiUserPlus } from "react-icons/bi";
 import Table from "../components/table";
 import Form from "../components/form";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleChangeAction } from "../redux/slices/appSlice";
 
 export default function Home() {
-  const [visible, setVisible] = useState(false);
-
+  const visible = useSelector((state) => state.app.client.toggleForm);
+  const dispatch = useDispatch();
   const clickHandler = () => {
-    setVisible(!visible);
+    dispatch(toggleChangeAction());
   };
 
   return (
@@ -41,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* collapsable form */}
-        {visible ? <Form/> : null}
+        {visible ? <Form /> : null}
 
         {/* table */}
         <div className="container mx-auto">
