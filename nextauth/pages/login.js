@@ -5,9 +5,15 @@ import styles from "../styles/Form.module.css";
 import Image from "next/image";
 import { HiAtSymbol, HiFingerPrint } from "react-icons/hi";
 import { useState } from "react";
+import { signIn, signOut } from "next-auth/react";
 
 const Login = () => {
   const [show, setShow] = useState(false);
+
+  // Google handle function
+  async function handleGoogleSignin() {
+    signIn("google", { callbackUrl: "http://localhost:3000" });
+  }
 
   return (
     <Layout>
@@ -58,7 +64,11 @@ const Login = () => {
           </div>
 
           <div className="input-button">
-            <button type="button" className={styles.button_custom}>
+            <button
+              type="button"
+              onClick={handleGoogleSignin}
+              className={styles.button_custom}
+            >
               Sign In with Google{" "}
               <Image
                 src={"/assets/google.svg"}
