@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 import { BiBrush } from "react-icons/bi";
 import Success from "./success";
-import { useQuery } from "@tanstack/react-query";
-import { getUser } from "../lib/helper";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { getUser, updateUser, getUsers } from "../lib/helper";
 
 const formReducer = (state, event) => {
   return {
@@ -14,25 +14,39 @@ const formReducer = (state, event) => {
 export default function UpdateUserForm({ formId, formData, setFormData }) {
   // const [formData, setFormData] = useReducer(formReducer, {});
 
-  const {isLoading, isError, error, data} = useQuery(["user", formId], () => getUser(formId));
+  const queryClient = useQueryClient();
+  const { isLoading, isError, error, data } = useQuery(["users", formId], () =>
+    getUser(formId)
+  );
+  const UpdateMutation = useMutation((newData) => updateUser(formId, newData), {
+    onSuccess: async (data) => {
+      console.log("data updated");
+      // queryClient.setQueryData('users', (old) => [data])
+      queryClient.prefetchQuery(["users"], getUsers);
+    },
+  });
 
-  if(isLoading) return <div>Loading...</div>
-  if(isError) return <div>{error}</div>
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>{error}</div>;
 
-  const {name, avatar, salary, date, email, status} = data
-  const [firstname, lastname] = name? name.split(' ') : formData
+  const { name, avatar, salary, date, email, status } = data;
+  const [firstname, lastname] = name ? name.split(" ") : formData;
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    console.log(formData);
-    if (Object.keys(formData).length == 0)
-      return console.log("Don't have Form Data");
+    let userName = `${formData.firstname ?? firstname} ${
+      formData.lastname ?? lastname
+    }`;
+    let updated = Object.assign({}, data, formData, { name: userName });
+    console.log(updated);
+    await UpdateMutation.mutate(updated);
   };
 
-  if (Object.keys(formData).length > 0) {
-    return <Success message={"Data added"} />;
-  }
+  // if (Object.keys(formData).length > 0) {
+  //   return <Success message={"Data added"} />;
+  // }
+
   return (
     <form className="grid lg:grid-cols-2 w-4/6 gap-4" onSubmit={handleSubmit}>
       <div className="input-type">
@@ -94,7 +108,7 @@ export default function UpdateUserForm({ formId, formData, setFormData }) {
             id="radioDefault1"
             name="status"
             onChange={setFormData}
-            defaultValue={status== 'Active'}
+            defaultChecked={status == "Active"}
             className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300  bg-white checked:bg-green-500 checked:border-green-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           />
           <label htmlFor="radioDefault1" className="inline-block tet-gray-800">
@@ -108,7 +122,7 @@ export default function UpdateUserForm({ formId, formData, setFormData }) {
             id="radioDefault2"
             name="status"
             onChange={setFormData}
-            defaultValue={status== 'Inactive'}
+            defaultChecked={status == "Inactive"}
             className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300  bg-white checked:bg-green-500 checked:border-green-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           />
           <label htmlFor="radioDefault2" className="inline-block tet-gray-800">
