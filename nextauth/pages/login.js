@@ -1,11 +1,14 @@
-import React from "react";
 import Head from "next/head";
 import Layout from "../layout/layout";
 import Link from "next/link";
 import styles from "../styles/Form.module.css";
 import Image from "next/image";
+import { HiAtSymbol, HiFingerPrint } from "react-icons/hi";
+import { useState } from "react";
 
 const Login = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <Layout>
       <Head>
@@ -29,14 +32,23 @@ const Login = () => {
               placeholder="Email"
               className={styles.input_text}
             />
+            <span className="icon flex items-center px-4">
+              <HiAtSymbol size={25} />
+            </span>
           </div>
           <div className={styles.input_group}>
             <input
-              type="password"
+              type={`${show ? "text" : "password"}`}
               name="password"
               placeholder="password"
               className={styles.input_text}
             />
+            <span
+              className="icon flex items-center px-4"
+              onClick={() => setShow(!show)}
+            >
+              <HiFingerPrint size={25} />
+            </span>
           </div>
 
           <div className="input-button">
@@ -48,13 +60,23 @@ const Login = () => {
           <div className="input-button">
             <button type="button" className={styles.button_custom}>
               Sign In with Google{" "}
-              <Image src={"/assets/google.svg"} alt='google' width="20" height={20}></Image>
+              <Image
+                src={"/assets/google.svg"}
+                alt="google"
+                width="20"
+                height={20}
+              ></Image>
             </button>
           </div>
           <div className="input-button">
             <button type="button" className={styles.button_custom}>
               Sign In with Github{" "}
-              <Image src={"/assets/github.svg"}  alt='Github' width={25} height={25}></Image>
+              <Image
+                src={"/assets/github.svg"}
+                alt="Github"
+                width={25}
+                height={25}
+              ></Image>
             </button>
           </div>
         </form>
