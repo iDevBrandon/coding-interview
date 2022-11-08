@@ -1,18 +1,35 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { BiUserPlus } from "react-icons/bi";
+import { BiUserPlus, BiX, BiCheck } from "react-icons/bi";
 import Table from "../components/table";
 import Form from "../components/form";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleChangeAction } from "../redux/slices/appSlice";
+import { toggleChangeAction, deleteDataAction } from "../redux/slices/appSlice";
+import { useQueryClient } from "@tanstack/react-query";
+import { deleteUser, getUsers } from "../lib/helper";
 
 export default function Home() {
   const visible = useSelector((state) => state.app.client.toggleForm);
+  const deleteId = useSelector((state) => state.app.client.deletedId);
+  const queryClient = useQueryClient();
+
   const dispatch = useDispatch();
   const clickHandler = () => {
     dispatch(toggleChangeAction());
+  };
+
+  const deletehandler = async () => {
+    if (deleteId) {
+      await deleteUser(deleteId);
+      await queryClient.prefetchQuery(["users"], getUsers);
+      await dispatch(deleteDataAction(null));
+    }
+  };
+
+  const cancelhandler = async () => {
+    await dispatch(deleteDataAction(null));
   };
 
   return (
@@ -40,6 +57,7 @@ export default function Home() {
               </span>
             </button>
           </div>
+          {deleteId && DeleteComponent({ deletehandler, cancelhandler })}
         </div>
 
         {/* collapsable form */}
@@ -51,5 +69,28 @@ export default function Home() {
         </div>
       </main>
     </section>
+  );
+}
+
+function DeleteComponent({ deletehandler, cancelhandler }) {
+  return (
+    <div>
+      <p>Are you sure?</p>
+      <button
+        onClick={deletehandler}
+        className="flex bg-red-500 text-white px-4 py-2 border rounded-md hover:bg-rose-500 hover:border-red-500 hover:text-gray-50"
+      >
+        Yes
+      </button>
+      <button
+        onClick={cancelhandler}
+        className="flex bg-green-500 text-white px-4 py-2 border rounded-md hover:bg-gree-500 hover:border-green-500 hover:text-gray-50"
+      >
+        No
+        <span className="px-1">
+          <BiCheck color="rgb(255 255 255)" size={25} />
+        </span>
+      </button>
+    </div>
   );
 }
