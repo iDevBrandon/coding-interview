@@ -1,6 +1,8 @@
 import { useReducer } from "react";
 import { BiBrush } from "react-icons/bi";
 import Success from "./success";
+import { useQuery } from "@tanstack/react-query";
+import { getUser } from "../lib/helper";
 
 const formReducer = (state, event) => {
   return {
@@ -9,8 +11,16 @@ const formReducer = (state, event) => {
   };
 };
 
-export default function UpdateUserForm({_id, formData, setFormData}) {
+export default function UpdateUserForm({ formId, formData, setFormData }) {
   // const [formData, setFormData] = useReducer(formReducer, {});
+
+  const {isLoading, isError, error, data} = useQuery(["user", formId], () => getUser(formId));
+
+  if(isLoading) return <div>Loading...</div>
+  if(isError) return <div>{error}</div>
+
+  const {name, avatar, salary, date, email, status} = data
+  const [firstname, lastname] = name? name.split(' ') : formData
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,6 +40,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
           type="text"
           name="firstname"
           onChange={setFormData}
+          defaultValue={firstname}
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="FirstName"
         />
@@ -39,6 +50,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
           type="text"
           name="lastname"
           onChange={setFormData}
+          defaultValue={lastname}
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="LastName"
         />
@@ -48,6 +60,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
           type="text"
           name="email"
           onChange={setFormData}
+          defaultValue={email}
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Email"
         />
@@ -57,6 +70,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
           type="text"
           name="salary"
           onChange={setFormData}
+          defaultValue={salary}
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Salary"
         />
@@ -66,6 +80,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
           type="date"
           name="date"
           onChange={setFormData}
+          defaultValue={date}
           className="border px-5 py-3 focus:outline-none rounded-md"
           placeholder="Salary"
         />
@@ -79,6 +94,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
             id="radioDefault1"
             name="status"
             onChange={setFormData}
+            defaultValue={status== 'Active'}
             className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300  bg-white checked:bg-green-500 checked:border-green-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           />
           <label htmlFor="radioDefault1" className="inline-block tet-gray-800">
@@ -92,6 +108,7 @@ export default function UpdateUserForm({_id, formData, setFormData}) {
             id="radioDefault2"
             name="status"
             onChange={setFormData}
+            defaultValue={status== 'Inactive'}
             className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300  bg-white checked:bg-green-500 checked:border-green-500 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
           />
           <label htmlFor="radioDefault2" className="inline-block tet-gray-800">
