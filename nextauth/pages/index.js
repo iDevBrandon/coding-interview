@@ -49,7 +49,7 @@ function User() {
       </div>
 
       <div className="flex justify-center">
-        <button className="mt-5 px-10 py-1 rounded-sm bg-indigo-500 bg-gray-50">
+        <button className="mt-5 px-10 py-1 rounded-sm bg-indigo-500">
           Sign Out
         </button>
       </div>
