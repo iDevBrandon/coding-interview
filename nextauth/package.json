@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
+    "bcryptjs": "^2.4.3",
     "formik": "^2.2.9",
     "mongoose": "^6.7.2",
     "next": "12.2.2",
