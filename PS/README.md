@@ -10,6 +10,8 @@ sometimes, remove trim()
 
 const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
 
+repli 실행할땐 백준 테스트를 위해서 Ctrl + d 제출
+
 ## fs module
 
 Run by Node.js
