@@ -1,5 +1,5 @@
 // STACK
-const stack = [];
+// const stack = [];
 
 // push
 stack.push("dog");
