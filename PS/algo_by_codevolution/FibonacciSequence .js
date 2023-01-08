@@ -12,7 +12,7 @@ fibonacci(3) = [0,1,1]
 function answer(n) {
   let arr = [0, 1]; // initial
   for (let i = 2; i < n; i++) {
-    console.log(arr[i] = , i + 1);
+    console.log(arr[i], i + 1);
   }
 
   console.log(arr);

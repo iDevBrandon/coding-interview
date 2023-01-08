@@ -57,7 +57,7 @@ AWS amplify
 
 ## 🧩 TypeScript
 
-https://www.udemy.com/course/understanding-typescript/
+<https://www.udemy.com/course/understanding-typescript/>
 
 ## Testing & Clean Code
 
@@ -76,26 +76,26 @@ Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
 [Array](/array)
-[algorithms](#algorithms)
-[Contents](#contents)
-[TRY later](#try-later)
-[Time check](#time-check)
-[File read](#file-read)
-[String](#string)
-[StringStream](#stringstream)
-[Vector](#vector)
-[Linked list](#linked-list)
-[Recursion](#recursion)
-[Hash Map](#hash-map)
-[Map](#map)
-[Stack](#stack)
-[Queue](#queue)
-[Heap](#heap)
-[Bitmasking](#bitmasking)
-[DFS](#dfs)
-[BFS](#bfs)
-[DP](#dp)
-[Binary Search](#binary-search)
+[algorithms](/algorithms)
+[Contents](/contents)
+[TRY later](/try-later)
+[Time check](/time-check)
+[File read](/file-read)
+[String](/string)
+[StringStream](/stringstream)
+[Vector](/vector)
+[Linked list](/linked-list)
+[Recursion](/recursion)
+[Hash Map](/hash-map)
+[Map](/map)
+[Stack](/stack)
+[Queue](/queue)
+[Heap](/heap)
+[Bitmasking](/bitmasking)
+[DFS](/dfs)
+[BFS](/bfs)
+[DP](/dp)
+[Binary Search](/binary-search)
 
 ## 🔒 Data Structure
 
