@@ -24,5 +24,7 @@
       "datetime": "August 09, 2021 4:44:22 PM",
       "body": "Some more testing words"
     }
-  ]
+  ],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" }
 }

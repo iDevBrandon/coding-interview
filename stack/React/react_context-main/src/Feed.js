@@ -1,6 +1,7 @@
 import Post from './Post';
 
 const Feed = ({ posts }) => {
+    console.log(posts)
     return (
         <>
             {posts.map(post => (
