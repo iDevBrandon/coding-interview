@@ -1,4 +1,4 @@
-const input = require("fs").readFileSync("/dev/stdin").toString().spint("\n");
+const input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
 
 const count = Number(input[0]);
 const newArr = input[1].split(" ");
