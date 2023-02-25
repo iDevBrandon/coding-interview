@@ -21,6 +21,10 @@ Solving algorithm problems with your favoriate language.
 <details>
 <summary><strong>Stack</strong></summary>
 
+   Stack - Last in Last Out (LIFO)
+   Queue - First in First Out (FIFO)
+   <https://www.youtube.com/watch?v=1AJ4ldcH2t4>
+
 [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 </details>

@@ -35,27 +35,6 @@ console.log(`your length is ${length} & your arr is ${values}`);
 process.exit();
 });
 
-### free resources
-
-1. [Neetcode.io](https://neetcode.io/)
-2. [Neetcode YT channel](https://www.youtube.com/channel/UC_mYaQAE6-71rjSN6CeCA-g)
-3. [Nick White YT channel](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA)
-
-### study order
-
-1. Stack - Last in Last Out (LIFO)
-   Queue - First in First Out (FIFO)
-   <https://www.youtube.com/watch?v=1AJ4ldcH2t4>
-
-## Frequent type of problem
-
-완전 탐색(BFS, DFS, 이분 탐색 등)
-동적 계획법(DP)
-문자열 처리
-트리, 그래프
-그리디 알고리즘
-브루트 포스
-
 ## Big O Notation
 
 Iterating over a collection Or using N as a pointer with a for loop => O(N)
