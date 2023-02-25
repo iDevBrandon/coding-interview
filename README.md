@@ -5,26 +5,46 @@
 Solving algorithm problems with your favoriate language.
 Leetcode/hackrank/Programmers
 
-[Arrays & Hashing](/ps/leetcode//arrays-hashing)
+[Arrays & Hashing](./ps/leetcode//arrays-hashing)
+
 [algorithms](/algorithms)
+
 [Contents](/contents)
+
 [TRY later](/try-later)
+
 [Time check](/time-check)
+
 [File read](/file-read)
+
 [String](/string)
+
 [StringStream](/stringstream)
+
 [Vector](/vector)
+
 [Linked list](/linked-list)
+
 [Recursion](/recursion)
+
 [Hash Map](/hash-map)
+
 [Map](/map)
+
 [Stack](/stack)
+
 [Queue](/queue)
+
 [Heap](/heap)
+
 [Bitmasking](/bitmasking)
+
 [DFS](/dfs)
+
 [BFS](/bfs)
+
 [DP](/dp)
+
 [Binary Search](/binary-search)
 
 <https://neetcode.io/>
@@ -37,7 +57,9 @@ CSS 스타일링(CSS Modules, Sass/Scss, Styled-components 등)
 REST API를 통해 비동기로 데이터 불러오기
 Component Life Cycle
 최적화 방법(Lazy Loading 등)
-상태관리 라이브러리(React : Redux, MobX / Vue : Vuex)
+state management libraries(React : Redux, MobX / Vue : Vuex)
+
+## 3. Coding Interview
 
 ## Study order
 
