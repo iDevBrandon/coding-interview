@@ -83,7 +83,27 @@ state management libraries(React : Redux, MobX / Vue : Vuex)
 
 ## 3. Coding Interview
 
-### JavaScript
+### 3-1. HTML
+
+<details>
+<summary><strong>쿠키(Cookies)와 세션저장소(sessionStorage)와 로컬저장소(localStorage)의 차이점을 설명해주세요.
+</strong></summary>
+
+정답은?
+
+</details>
+
+<details>
+<summary><strong>
+script, script async와 script defer의 차이점에 관해 설명해주세요.
+
+</strong></summary>
+
+정답은?
+
+</details>
+
+### 3-2. JavaScript
 
 - [callback, promise]
 - [sync vs Async](./docs/Javascript/AsynchronousProcessing.md)
@@ -91,7 +111,7 @@ state management libraries(React : Redux, MobX / Vue : Vuex)
 - [ES6: Promise](./docs/Javascript/Promise.md)
 - [Prototype]
 
-### 📘 [React](https://github.com/iDevBrandon/web-dev/tree/main/stack/React)
+### 3-3. Framework - React
 
 - What is redux?
 
@@ -182,3 +202,7 @@ algorithms-in-motion
 • AWS S3, AWS CloudFront, AWS CodeBuild
 
 • GitHub Workflow, Git Flow
+
+```
+
+```
