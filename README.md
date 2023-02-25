@@ -1,15 +1,29 @@
 # 👨‍💻 Web Dev
 
-## 1. Problem Solving
+## [1. Problem Solving](https://neetcode.io/roadmap)
 
 Solving algorithm problems with your favoriate language.
-Leetcode/hackrank/Programmers
 
-[Arrays & Hashing](./ps/leetcode//arrays-hashing)
+<details>
+<summary><strong>Arrays & Hashing</strong></summary>
 
-[algorithms](/algorithms)
+[Search Insert Position](https://github.com/cheatsheet1999/FrontEndCollection/issues/26)
 
-[Contents](/contents)
+</details>
+
+<details>
+<summary><strong>Two Pointers</strong></summary>
+
+[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+</details>
+
+<details>
+<summary><strong>Stack</strong></summary>
+
+[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+</details>
 
 [TRY later](/try-later)
 
@@ -30,8 +44,6 @@ Leetcode/hackrank/Programmers
 [Hash Map](/hash-map)
 
 [Map](/map)
-
-[Stack](/stack)
 
 [Queue](/queue)
 
