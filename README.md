@@ -91,8 +91,6 @@ state management libraries(React : Redux, MobX / Vue : Vuex)
 - [ES6: Promise](./docs/Javascript/Promise.md)
 - [Prototype]
 
-
-
 ### 📘 [React](https://github.com/iDevBrandon/web-dev/tree/main/stack/React)
 
 - What is redux?
@@ -151,3 +149,36 @@ algorithms-in-motion
 <https://zero-base.co.kr/event/school_FE?utm_source=facebook&utm_medium=paid&utm_campaign=school_FE_conv_all_dr&utm_content=set1_ad15&external_browser_redirect=true&fbclid=IwAR3GEAkkmrLfEGK4vo1zCez-y_SFxQI8NZbVk87CccimR8uW9wPKzsbzrcc>
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
+
+## 프론트 기술
+
+토스가 사용하는 기술
+• 코어: React, TypeScript, Next.js
+
+• 상태 관리: React-Query, Recoil
+
+• 스타일링: Emotion
+
+• 패키지 매니저: Yarn Berry
+
+• 빌드: Webpack, ESBuild, SWC, Babel
+
+• CI/CD: GitHub Actions
+
+[삼쩜삼 Front-end팀에서 사용하는 기술스택입니다.]
+
+• Typescript, React
+
+• Recoil, React-Query
+
+• Storybook, Emotion
+
+• Jest
+
+• Yarn Berry
+
+• Webpack, Vite
+
+• AWS S3, AWS CloudFront, AWS CodeBuild
+
+• GitHub Workflow, Git Flow
