@@ -4,45 +4,40 @@
 
 Solving algorithm problems with your favoriate language.
 
-Arrays & Hashing
+### 자료구조
 
-Two Pointers
+- 배열(Array)과 리스트(List)
+- 스택 (Stack)
+- 큐 (queue)
+- 트리(Tree)와 우선순위 큐(Priority Queue)
+- 그래프(Graph)
 
-Stack
+### 정렬(Sorting) 알고리즘
 
-[TRY later](/try-later)
+- 선택 정렬
+- 버블 정렬
+- 삽입 정렬
+- 병합 정렬
 
-[Time check](/time-check)
+### 탐욕법(greedy)
 
-[File read](/file-read)
+### 이진 탐색 알고리즘
 
-[String](/string)
+### 백트레킹
 
-[StringStream](/stringstream)
+### DFS:깊은 우선 탐색 알고리즘
 
-[Vector](/vector)
+### BFS 알고리즘
 
-[Linked list](/linked-list)
+### DP(다이나믹 프로그래밍)
 
-[Recursion](/recursion)
+### 최단 경로
 
-[Hash Map](/hash-map)
+### 투 포인터 알고리즘
 
-[Map](/map)
+### 누적합 알고리즘
 
-[Queue](/queue)
-
-[Heap](/heap)
-
-[Bitmasking](/bitmasking)
-
-[DFS](/dfs)
-
-[BFS](/bfs)
-
-[DP](/dp)
-
-[Binary Search](/binary-search)
+---
 
 ## 2. Coding Assignment
 
@@ -62,27 +57,19 @@ state management libraries(React : Redux, MobX / Vue : Vuex)
 
 [To-do List](https://www.youtube.com/playlist?list=PLkqwj9vc20pUitqvZrLPk-hTNv63EJqwg)
 
+---
+
 ## 3. Coding Interview
 
 ### 3-1. HTML
 
-<details>
-<summary><strong>쿠키(Cookies)와 세션저장소(sessionStorage)와 로컬저장소(localStorage)의 차이점을 설명해주세요.
-</strong></summary>
+쿠키(Cookies)와 세션저장소(sessionStorage)와 로컬저장소(localStorage)의 차이점을 설명해주세요.
 
 정답은?
 
-</details>
-
-<details>
-<summary><strong>
 script, script async와 script defer의 차이점에 관해 설명해주세요.
 
-</strong></summary>
-
 정답은?
-
-</details>
 
 ### 3-2. JavaScript
 
@@ -150,6 +137,8 @@ algorithms-in-motion
 <https://zero-base.co.kr/event/school_FE?utm_source=facebook&utm_medium=paid&utm_campaign=school_FE_conv_all_dr&utm_content=set1_ad15&external_browser_redirect=true&fbclid=IwAR3GEAkkmrLfEGK4vo1zCez-y_SFxQI8NZbVk87CccimR8uW9wPKzsbzrcc>
 
 [Frontend Roadmap](https://roadmap.sh/frontend)
+
+---
 
 ## 프론트 기술
 
