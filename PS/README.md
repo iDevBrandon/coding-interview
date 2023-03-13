@@ -49,3 +49,19 @@ Time complexity: How much runtime(more time) do we need to execute the code as t
 ## Logarithmic time complexity
 
 If the input is doubled, then we only have to do one more operation.
+
+## [1. Problem Solving](https://neetcode.io/roadmap)
+
+<https://fastcampus.co.kr/dev_online_upjscodingtest>
+
+알고리즘 종류별로 하나씩 하루에 5문제씩 계속 풀면 확 늘긴 할건데.. 아니면 하루 2~3문제씩이라도 매일매일
+
+보통 코테 스터디 하시는분들 보면 알고리즘 종류별로 문제 리스트 다 정리한다음에 꾸준히 하시죠. 막 대회나갈정도에 그런 실력까진 아니더라도 코테 기준점은 가는 반타작 이상하는 실력만 가도
+
+## 자료구조
+
+- 배열(Array)과 리스트(List)
+- 스택 (Stack)
+- 큐 (queue)
+- 트리(Tree)와 우선순위 큐(Priority Queue)
+- 그래프(Graph)

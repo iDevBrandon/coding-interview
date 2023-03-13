@@ -4,30 +4,11 @@
 
 Solving algorithm problems with your favoriate language.
 
-<details>
-<summary><strong>Arrays & Hashing</strong></summary>
+Arrays & Hashing
 
-[Search Insert Position](https://github.com/cheatsheet1999/FrontEndCollection/issues/26)
+Two Pointers
 
-</details>
-
-<details>
-<summary><strong>Two Pointers</strong></summary>
-
-[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-
-</details>
-
-<details>
-<summary><strong>Stack</strong></summary>
-
-Stack - Last in Last Out (LIFO)
-Queue - First in First Out (FIFO)
-<https://www.youtube.com/watch?v=1AJ4ldcH2t4>
-
-[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-
-</details>
+Stack
 
 [TRY later](/try-later)
 
@@ -202,7 +183,3 @@ algorithms-in-motion
 • AWS S3, AWS CloudFront, AWS CodeBuild
 
 • GitHub Workflow, Git Flow
-
-```
-
-```
