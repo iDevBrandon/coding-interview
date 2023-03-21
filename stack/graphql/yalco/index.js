@@ -7,8 +7,21 @@ const typeDefs = gql`
     equipments: [Equipment]
     supplies: [Supply]
   }
+
   type Mutation {
+    insertEquipment(
+      id: String
+      used_by: String
+      count: Int
+      new_or_used: String
+    ): Equipment
     deleteEquipment(id: String): Equipment
+    updateEquipment(
+      id: String
+      used_by: String
+      count: Int
+      new_or_used: String
+    ): Equipment
   }
   type Team {
     id: Int
@@ -22,7 +35,7 @@ const typeDefs = gql`
   }
   type Equipment {
     id: String
-    userd_by: String
+    used_by: String
     count: Int
     new_or_used: String
   }
@@ -44,18 +57,30 @@ const resolvers = {
     supplies: () => database.supplies,
   },
   Mutation: {
+    insertEquipment: (parent, args, context, info) => {
+      database.equipments.push(args);
+      return args;
+    },
     deleteEquipment: (parent, args, context, info) => {
-        const deleted = database.equipments
-            .filter((equipment) => {
-                return equipment.id === args.id
-            })[0]
-        database.equipments = database.equipments
-            .filter((equipment) => {
-                return equipment.id !== args.id
-            })
-        return deleted
-    }
-}
+      const deleted = database.equipments.filter((equipment) => {
+        return equipment.id === args.id;
+      })[0];
+      database.equipments = database.equipments.filter((equipment) => {
+        return equipment.id !== args.id;
+      });
+      return deleted;
+    },
+    updateEquipment: (parent, args, context, info) => {
+      return database.equipments
+        .filter((equipment) => {
+          return equipment.id === args.id;
+        })
+        .map((equipment) => {
+          Object.assign(equipment, args);
+          return equipment;
+        })[0];
+    },
+  },
 };
 const server = new ApolloServer({ typeDefs, resolvers });
 server.listen().then(({ url }) => {
