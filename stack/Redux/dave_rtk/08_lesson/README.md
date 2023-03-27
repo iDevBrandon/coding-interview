@@ -1,6 +1,6 @@
 # "React Redux Toolkit for Beginners"
 
-## Bonus Lesson - Chapter 8:
+## Bonus Lesson - Chapter 8
 
 ### Blog Project with full RTK Query Refactor
 

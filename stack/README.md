@@ -35,7 +35,11 @@ DOM 추가 방식
 
 DOM 조작을 최소화해야 성능 올릴 수 있다는 사실을 이해하기 위해선, 브라우저 렌더링 과정을 이해 해야함.
 
-<img width="1389" alt="Screen Shot 2021-08-09 at 3 39 05 PM" src="https://user-images.githubusercontent.com/40842018/128668449-86210b5d-e2ba-4289-9bb9-254eca7f77e1.png">
+<img
+  width="1389"
+  alt="Screen Shot 2021-08-09 at 3 39 05 PM"
+  src="https://user-images.githubusercontent.com/40842018/128668449-86210b5d-e2ba-4289-9bb9-254eca7f77e1.png"
+/>
 
 브라우저는 렌더링 엔진은 클라이언트가 서버로부터 요청한 html부터 순차적으로 파싱하며, DOM을 생성해 간다.
 그리고, CSS 스타일 태그를 만나면, CSSOM을 생성한다.
@@ -86,7 +90,7 @@ ex) 사이트 접속이 안되면, 쿠키를 제거 해보는것도 방법중 �
 
 ## Flux Architecture & Redux
 
-https://medium.com/p/db9b7b06a909/edit - will update in English soon
+<https://medium.com/p/db9b7b06a909/edit> - will update in English soon
 
 ## CSR(Client Server Rendering)
 

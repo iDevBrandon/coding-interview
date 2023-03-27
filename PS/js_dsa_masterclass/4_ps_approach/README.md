@@ -26,8 +26,8 @@ charCount('aaaa') // {a:4,b:0,c:0}
 This force you to think about the code you will write.
 
 function charCount(str) {
-    // do sth
-    // return an object with alphabetcially order
+// do sth
+// return an object with alphabetcially order
 
     // make object to return at end
     // loop over string, for each character...
@@ -36,7 +36,7 @@ function charCount(str) {
         // if character is something else, don't do anything
 
     // return object at end
+
 }
 
 ## Step 4 : solve/simplify
-

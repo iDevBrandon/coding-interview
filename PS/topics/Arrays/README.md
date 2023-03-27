@@ -1,4 +1,5 @@
-JS Array
+# JS Array
+
 let array1 = [1,2,3,4];
 // insert
 .push()
@@ -35,15 +36,18 @@ console.log(element);
 })
 
 helper functions like
-1.slice
+
+## 1 slice
+
 .slice(begin, end)
 let array1 = [1,2,3,4];
 array1.slice(1,2); //[2]
 array1.slice(2,4); // [3,4];
 
-2. .splice(begin, size, element1)
-   let array1 = [1,2,3,4];
-   array1.splice(1,2) // array1 = [1,4];
+## 2 .splice(begin, size, element1)
+
+let array1 = [1,2,3,4];
+array1.splice(1,2) // array1 = [1,4];
 
 3..concat() - add the array in the end and return that array
 let array1 = [1,2,3,4];
