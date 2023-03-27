@@ -26,9 +26,9 @@ POST -> Mutation
 - Differences between between GraphQL and REST
 
 One endpoint
-  /user -> /graphql
-  /followers -> /graphql
-  /posts -> /graphql
+/user -> /graphql
+/followers -> /graphql
+/posts -> /graphql
 
 Overfetching and underfetching
 

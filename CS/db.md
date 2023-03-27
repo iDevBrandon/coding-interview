@@ -1,4 +1,3 @@
-
 # DBMS(Database Management Systems)
 
 SQL(Relational) : MySQL, mssql, postgres...

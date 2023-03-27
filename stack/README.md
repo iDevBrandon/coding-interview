@@ -1,10 +1,10 @@
 # FE skill set
 
 - Redux
-- React query 
+- React query
 - Next.js
 - GraphQL & Apollo
-- Testing 
+- Testing
 
 ## FE Interview questions
 
@@ -85,6 +85,7 @@ ex) 사이트 접속이 안되면, 쿠키를 제거 해보는것도 방법중 �
 ## CSS
 
 ## Flux Architecture & Redux
+
 https://medium.com/p/db9b7b06a909/edit - will update in English soon
 
 ## CSR(Client Server Rendering)
@@ -92,7 +93,7 @@ https://medium.com/p/db9b7b06a909/edit - will update in English soon
 SPA(Single Page Application) - rendering partly each components. Ex) React,View and Angular.
 Request source code to server and create static page
 
-Drawback of CSR 
+Drawback of CSR
 
 1. Initial Loading may take too long
 2. Low SEO

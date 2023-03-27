@@ -14,4 +14,4 @@ Big O of Arrays
 - Accessing - O(1)
 
 16. Big O Array methods
-push, pop, shift, unshift, concat, slice, sort(O(N*log N))
+    push, pop, shift, unshift, concat, slice, sort(O(N\*log N))

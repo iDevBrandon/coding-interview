@@ -64,12 +64,12 @@ dispatch({ type: ' INCREMENT'})
 ex) new Date(), Math.random(), axios.get() 같은 호출 할때마다 다른 결과를 만들어 낼 수 있기에 사용하면 안됩니다.
 주로 네트워크 요청과 같은 비동기 작업은 미들웨어를 통해 관리합니다.
 
-
 ## 5. 카운터 구현하기
-components for presentational components 
+
+components for presentational components
 containers for components for redux store status or dispatch action stuff
 상태를 조회할땐, useSelector()
 
 useSelector hook은 상태를 조회하는 훅입니다. state를 가져오는데, state는 현재상태.
 
-컴포넌트에서 리덕스를 사용할때, 컨테이너 컴포넌트에서 프리젠테이셔널 컴포넌트에 props로 넘기고, 리덕스 스토어는 스토어를 상태관리하고, 컨테이너 컴포넌트는 스토어에 액션 디스패치함. 
+컴포넌트에서 리덕스를 사용할때, 컨테이너 컴포넌트에서 프리젠테이셔널 컴포넌트에 props로 넘기고, 리덕스 스토어는 스토어를 상태관리하고, 컨테이너 컴포넌트는 스토어에 액션 디스패치함.

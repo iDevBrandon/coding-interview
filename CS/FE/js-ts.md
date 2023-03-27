@@ -6,6 +6,6 @@
 
 <https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/?fbclid=IwAR0cDLFxXF0M63_eAwckIXsmlzFQjVKIMJ6bj1G3vKcLdV053OuXzlT3Q5o#differences-between-connect-and-useselector>
 
-* Explain event delegation. (이벤트 위임에 대해 설명하세요.)
+- Explain event delegation. (이벤트 위임에 대해 설명하세요.)
 
 이벤트 위임이란
