@@ -140,6 +140,10 @@ algorithms-in-motion
 
 [프론트 기사](https://github.com/react-korea-developer/article)
 
+### React Query
+
+<https://tkdodo.eu/blog/practical-react-query>
+
 ---
 
 ## 프론트 기술
