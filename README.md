@@ -144,6 +144,32 @@ algorithms-in-motion
 
 <https://tkdodo.eu/blog/practical-react-query>
 
+<https://2dowon.github.io/docs/react/how-to-use-react-query/>
+
+<https://www.youtube.com/watch?v=VtWkSCZX0Ec&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&ab_channel=Codevolution>
+
+<https://www.youtube.com/watch?v=lLWfZL-Y8lM&t=116s&ab_channel=DaveGray>
+
+<https://www.youtube.com/watch?v=MArE6Hy371c&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC>
+
+<https://www.youtube.com/watch?v=r8Dg0KVnfMA&ab_channel=WebDevSimplified>
+
+### React Hook form
+
+<https://www.daleseo.com/react-hook-form/>
+
+<https://www.youtube.com/watch?v=JZjUv_qFtvM&ab_channel=DaveGray>
+
+### Vite
+
+<https://www.youtube.com/watch?v=iX3Nu1FcZKA&ab_channel=%EC%BD%94%EB%94%A9%EC%95%A0%ED%94%8C>
+
+### Testing
+
+<https://www.youtube.com/watch?v=mIO4Rbe_M74&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC>
+
+<https://www.youtube.com/watch?v=Mnd1RpRSxhU&ab_channel=%ED%94%84%EB%A1%B1%ED%8A%B8>
+
 ---
 
 ## 프론트 기술
@@ -178,3 +204,54 @@ algorithms-in-motion
 • AWS S3, AWS CloudFront, AWS CodeBuild
 
 • GitHub Workflow, Git Flow
+
+## Data
+
+### Data Scrapy crawling
+
+<https://www.youtube.com/watch?v=mBoX_JCKZTE&ab_channel=freeCodeCamp.org>
+<https://thepythonscrapyplaybook.com/freecodecamp-beginner-course/>
+
+### Data visualization
+
+<https://datascienceschool.net/intro.html> - Python
+
+[Data Visualization with D3, JavaScript, React - Full Course PART 2](https://www.youtube.com/watch?v=H2qPeJx1RDI&ab_channel=freeCodeCamp.org)
+
+<https://vizhub.com/forum/t/get-it-right-in-black-white-index/110>
+
+<https://www.inflearn.com/course/lecture?courseSlug=%ED%95%B5%EC%8B%AC-%EC%9E%85%EB%AC%B8%EC%9E%90-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%8C%90%EB%8B%A4%EC%8A%A4&unitId=126069&tab=curriculum>
+
+### D3
+
+<https://www.youtube.com/watch?v=TOJ9yjvlapY&ab_channel=Academind>
+
+## Projects
+
+### 1. OXINION - MERN + Next.js
+
+### 2. OXINION Finance - MERN + GraphQL
+
+[Apollo GraphQL Server Setup - Full Stack Build Ep1](https://www.youtube.com/watch?v=_OXHtJhz5Sk&ab_channel=KevinWade)
+
+<https://www.apollographql.com/tutorials/fullstack-quickstart/01-introduction>
+
+### 3. Fallen developer - T3
+
+[Do it! 알고리즘 코딩테스트 with Python](https://www.inflearn.com/course/%EB%91%90%EC%9E%87-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8C%8C%EC%9D%B4%EC%8D%AC#curriculum)
+
+[neetcode](https://neetcode.io/courses/dsa-for-beginners/4)
+
+[Build and Deploy a LeetCode Clone with React, Next JS, TypeScript, Tailwind CSS, Firebase](https://www.youtube.com/watch?v=GnodscC2p-A&ab_channel=freeCodeCamp.org)
+
+t3 example - <https://github.com/AntonioErdeljac/twitter-clone>
+
+## Interview
+
+<https://careerly.co.kr/qnas/2625>
+
+<https://app.slack.com/client/T0439Q8HNHG/C043NEW5AJV/thread/C0439Q8JFT4-1680180247.161849>
+
+## article
+
+<https://github.com/react-korea-developer/article>
