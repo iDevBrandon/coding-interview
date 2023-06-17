@@ -259,6 +259,7 @@ t3 example - <https://github.com/AntonioErdeljac/twitter-clone>
 - [정말 리액트에서 useMemo를 사용해야 할까요? 알아봅시다.](https://github.com/yeonjuan/dev-blog/blob/master/JavaScript/should-you-really-use-usememo.md)
 - [react-query 시작부터 적용까지](https://saengmotmi.netlify.app/react/react-query/)
 - [React Query 개념 및 정리](https://kyounghwan01.github.io/blog/React/react-query/basic/#%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2)
+- [react-query 파해치기](https://velog.io/@jewoo/React-Query-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0)
 - [컴포넌트를 잘 만드는 방법](https://ms3864.tistory.com/m/433)
 - [변경에 유연한 컴포넌트](https://jbee.io/web/components-should-be-flexible/)
 - [SWC 이용해서 React + Webpack 세팅해보기](https://helloinyong.tistory.com/347)
@@ -270,3 +271,4 @@ t3 example - <https://github.com/AntonioErdeljac/twitter-clone>
 - [React에서 Canvas API로 애니메이션 구현하기](https://blog.dalgu.app/dev/1)
 - [react-testing-library 를 사용한 리액트 컴포넌트 테스트](https://velog.io/@velopert/react-testing-library)
 - [(번역) Next.js의 app 디렉터리 아키텍처 이해하기](https://junghan92.medium.com/%EB%B2%88%EC%97%AD-next-js%EC%9D%98-app-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-28672980d765)
+- [Next 13과 react 18 서버 컴포넌트 관련 질문 - 커리어리](https://careerly.co.kr/qnas/2625)
