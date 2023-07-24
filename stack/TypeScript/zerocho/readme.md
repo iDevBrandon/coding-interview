@@ -136,6 +136,12 @@ any의 문제점은 ts가 포기를 해버림.
 
 Unknown을 사용하면, 지금 내가 type을 모를때 사용.
 
+## Utility Types
+
+### Partial 타입 분석
+
+### Omit, Exclude, Extract 타입분석
+
 ## [Part2. 실전 분석편](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%98%AC%EC%9D%B8%EC%9B%90-2)
 
 ## [React에 TypeScript 적용하기](https://www.inflearn.com/course/react-typescript-webgame)
