@@ -1,7 +1,10 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.6.4"
