@@ -39,7 +39,7 @@ rl.on("line", function (line) {
 
 ---
 
-### 자료구조
+### 백준 문제 추천
 
 - 배열(Array)과 리스트(List)
 - 스택 (Stack)
@@ -47,22 +47,13 @@ rl.on("line", function (line) {
 - 트리(Tree)와 우선순위 큐(Priority Queue)
 - 그래프(Graph)
 
-배열은 메모리의 연속 공간에 값이 채워져 있는 형태의 자료구조. 인덱스를 통해 참조할수 있음.
-
-리스트는 값과 포인터를 묶은 노드라는것을 포인터로 연결한 자료구조입니다.
-
-[숫자의 합](https://www.acmicpc.net/problem/11720)
-
 ### 정렬(Sorting) 알고리즘
-
-- 선택 정렬
-- 버블 정렬
-- 삽입 정렬
-- 병합 정렬
 
 ### 탐욕법(greedy)
 
-### 이진 탐색 알고리즘
+### 이진탐색 알고리즘
+
+[수 찾기](https://www.acmicpc.net/problem/1920)
 
 ### 백트레킹
 
