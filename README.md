@@ -4,24 +4,27 @@
 
 Solving algorithm problems with your favoriate language.
 
-### 자료구조
+## DBA
 
-- 배열(Array)과 리스트(List)
-- 스택 (Stack)
-- 큐 (queue)
-- 트리(Tree)와 우선순위 큐(Priority Queue)
-- 그래프(Graph)
+### 배열(Array)
+
+### 스택 (Stack)
+
+### 큐 (queue)
+
+### 트리(Tree)
+
+### 맵(Map)
+
+### 해시(Hash)
+
+### 그래프(Graph)
 
 ### 정렬(Sorting) 알고리즘
 
-- 선택 정렬
-- 버블 정렬
-- 삽입 정렬
-- 병합 정렬
-
 ### 탐욕법(greedy)
 
-### 이진 탐색 알고리즘
+### 이진탐색 알고리즘
 
 ### 백트레킹
 
