@@ -41,11 +41,21 @@ rl.on("line", function (line) {
 
 ## 백준 문제 추천
 
-- 배열(Array)과 리스트(List)
-- 스택 (Stack)
-- 큐 (queue)
-- 트리(Tree)와 우선순위 큐(Priority Queue)
-- 그래프(Graph)
+### 배열(Array)
+
+### 스택 (Stack)
+
+[스택](https://www.acmicpc.net/problem/10828)
+
+### 큐 (queue)
+
+### 트리(Tree)
+
+### 맵(Map)
+
+### 해시(Hash)
+
+### 그래프(Graph)
 
 ### 정렬(Sorting) 알고리즘
 
@@ -82,3 +92,6 @@ rl.on("line", function (line) {
 <https://www.inflearn.com/course/%EB%91%90%EC%9E%87-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%8C%8C%EC%9D%B4%EC%8D%AC/dashboard>
 
 <https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/dashboard>
+
+문제 리스트
+<https://covenant.tistory.com/224>
