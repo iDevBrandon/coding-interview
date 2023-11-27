@@ -39,7 +39,7 @@ rl.on("line", function (line) {
 
 ---
 
-### 백준 문제 추천
+## 백준 문제 추천
 
 - 배열(Array)과 리스트(List)
 - 스택 (Stack)
