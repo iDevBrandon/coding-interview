@@ -63,7 +63,8 @@ rl.on("line", function (line) {
 
 ### 이진탐색 알고리즘
 
-[수 찾기](https://www.acmicpc.net/problem/1920)
+[수 찾기](https://www.acmicpc.net/problem/1920)| [solution](/PS/)
+
 
 ### 백트레킹
 
